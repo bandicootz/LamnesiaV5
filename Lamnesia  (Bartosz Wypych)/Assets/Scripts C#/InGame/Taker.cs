@@ -16,7 +16,6 @@ namespace Lamnesia.InGame
         void Update()
         {
             ShootRaycast();
-
         }
 
         private void ShootRaycast()
@@ -45,7 +44,7 @@ namespace Lamnesia.InGame
 
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            GameObject door = hit.transform.gameObject;
+                            var door = hit.transform.gameObject;
 
                             if (m_Keys.Count > 0)
                             {
