@@ -8,7 +8,6 @@ TagManager:
   - Door
   - Plane
   - Enemy
-  - Key
   layers:
   - Default
   - TransparentFX

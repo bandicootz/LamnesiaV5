@@ -5,7 +5,7 @@ using UnityEngine;
 public class OpenDoor : MonoBehaviour
 {
     public Animation doorhere;
-    void OnTriggerStay(Collider other)
+    void OnTriggerStay()
     {
         if (Input.GetKey(KeyCode.E))
             doorhere.Play();
