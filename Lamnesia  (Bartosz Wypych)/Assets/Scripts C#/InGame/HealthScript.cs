@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Lamnesia.Player
@@ -12,6 +13,8 @@ namespace Lamnesia.Player
         
         private const float LowerBound = 0;
         private const float HigherBound = 100f;
+
+        [SerializeField] private GameObject loseScreen;
         
         [Header("Health")]
         public float maxHealth = 100f;
@@ -32,13 +35,23 @@ namespace Lamnesia.Player
 
         private void CheckBounds()
         {
-            if (health <= LowerBound) health = LowerBound;
+            if (health <= LowerBound)
+            {
+                health = LowerBound;
+                PlayDeath();
+            }
             if (health >= HigherBound) health = HigherBound;
         }
 
         private void UpdateHealthBar()
         {
             healthBar.fillAmount = health / maxHealth;
+        }
+
+        private void PlayDeath()
+        {
+            loseScreen.SetActive(true);
+            //play lose sound
         }
     }
 }
