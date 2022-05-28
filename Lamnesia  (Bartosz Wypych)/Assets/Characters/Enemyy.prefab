@@ -1542,7 +1542,6 @@ GameObject:
   - component: {fileID: 175910533595394222}
   - component: {fileID: 2868981395010468707}
   - component: {fileID: 5878632569892709681}
-  - component: {fileID: 3410918531283919999}
   - component: {fileID: 8024442550985059723}
   m_Layer: 0
   m_Name: Enemyy
@@ -1710,18 +1709,6 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"collection":{"$content":[{"name":"distanceToPlayer","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"angleToPlayer","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"directionToPlayer","value":{"x":3.0,"y":3.0,"z":3.0,"$type":"UnityEngine.Vector3"},"$version":"A"},{"name":"aimRotation","value":{"$content":15.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
---- !u!114 &3410918531283919999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6874025055406326870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77c1dda5ef968eb4b9183dd48c2fe890, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &8024442550985059723
 AudioSource:
   m_ObjectHideFlags: 0

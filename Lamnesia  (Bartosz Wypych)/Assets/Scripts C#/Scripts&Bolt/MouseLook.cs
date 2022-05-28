@@ -10,6 +10,9 @@ public class MouseLook : MonoBehaviour
 
     float xRotation = 0f;
 
+    [Header("Weapon")]
+    public WeaponController currentWeapon;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -25,5 +28,10 @@ public class MouseLook : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
+
+        if (currentWeapon)
+        {
+            currentWeapon.Initialise(this);
+        }
     }
 }

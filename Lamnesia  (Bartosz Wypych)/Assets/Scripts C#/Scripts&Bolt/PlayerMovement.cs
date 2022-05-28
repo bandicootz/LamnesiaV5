@@ -17,9 +17,6 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
-    [Header("Weapon")]
-    public WeaponController currentWeapon;
-
     void Update()
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -44,10 +41,5 @@ public class PlayerMovement : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
-
-        if (currentWeapon)
-        {
-            currentWeapon.Initialise(this);
-        }
     }
 }
