@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -9,6 +10,15 @@ namespace Lamnesia.InGame
         private List<Key> m_Keys;
         private Key m_Key;
         private Camera cam;
+        
+        [Header("TUTORIAL MESSAGES HERE")]
+        public string keyTipMessage = "Press [E] to collect a key";
+        public string openDoorMessage = "Press [E] to open a door";
+        public string errorOpenMessage = "You have no keys bro, door is locked";
+
+        [Header("REFERENCES TO OBJECTS")]
+        [SerializeField] private TextMeshProUGUI tipUI;
+        [SerializeField] private GameObject keyUI;
 
         private float range = 10f;
 
@@ -32,20 +42,25 @@ namespace Lamnesia.InGame
                 {
                     case "Key":
 
-                        Debug.Log("I AM KEY, PRESS 'E' TO INTERACT");
+                        tipUI.color = Color.green;
+                        tipUI.text = keyTipMessage;
 
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             m_Keys.Add(hit.transform.gameObject.GetComponent<Key>());
 
                             hit.transform.gameObject.SetActive(false);
+
+                            tipUI.text = "";
+                            keyUI.SetActive(true);
                         } // "deleting" keys after interaction
 
                         break;
 
                     case "Door":
-
-                        Debug.Log("I AM DOOR, PRESS 'E' TO INTERACT");
+                        
+                        tipUI.color = Color.yellow;
+                        tipUI.text = openDoorMessage;
 
                         if (Input.GetKeyDown(KeyCode.E))
                         {
@@ -61,13 +76,21 @@ namespace Lamnesia.InGame
                                         if (m_Key.CanOpen(door))
                                         {
                                             door.SetActive(false);
+
+                                            //turn off UI elements
+                                            keyUI.SetActive(false);
+                                            tipUI.text = "";
                                             //m_Keys.Remove(m_Key);
                                             return;
                                         }
                                     }
                                 }
                             }
-                            else Debug.Log("You have no keys bro, door is locked");
+                            else
+                            {
+                                tipUI.color = Color.red;
+                                tipUI.text = errorOpenMessage;
+                            }
                         }
 
                         break;

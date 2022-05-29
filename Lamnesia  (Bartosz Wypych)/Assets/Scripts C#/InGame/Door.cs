@@ -21,19 +21,15 @@ namespace Lamnesia.InGame
             if (CheckPair(keyValue))
             {
                 OpenDoor();
-                Debug.Log("You can open door");
                 return true;
             }
-            else
-            {
-                Debug.Log("You can't open a door with this key");
-                return false;
-            }
+            return false;
         }
 
         private void OpenDoor()
         {
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
+            gameObject.GetComponent<Animation>().Play();
         }
     }
 }
