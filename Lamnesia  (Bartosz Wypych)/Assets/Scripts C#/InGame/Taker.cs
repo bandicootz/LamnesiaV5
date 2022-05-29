@@ -7,10 +7,11 @@ namespace Lamnesia.InGame
 {
     public class Taker : MonoBehaviour
     {
-        private List<Key> m_Keys;
+        private List<Key> m_Keys = new List<Key>();
         private Key m_Key;
         private Camera cam;
-        
+        private int keysQuantiny = 0;
+
         [Header("TUTORIAL MESSAGES HERE")]
         public string keyTipMessage = "Press [E] to collect a key";
         public string openDoorMessage = "Press [E] to open a door";
@@ -48,11 +49,14 @@ namespace Lamnesia.InGame
                         if (Input.GetKeyDown(KeyCode.E))
                         {
                             m_Keys.Add(hit.transform.gameObject.GetComponent<Key>());
-
+                            keysQuantiny++;
+                            keyUI.SetActive(true);
+                            if (keysQuantiny > 1)
+                                keyUI.GetComponentInChildren<TextMeshProUGUI>().text = "x" + keysQuantiny;
+                            
                             hit.transform.gameObject.SetActive(false);
 
-                            tipUI.text = "";
-                            keyUI.SetActive(true);
+                            tipUI.text = " ";
                         } // "deleting" keys after interaction
 
                         break;
@@ -77,9 +81,16 @@ namespace Lamnesia.InGame
                                         {
                                             door.SetActive(false);
 
-                                            //turn off UI elements
-                                            keyUI.SetActive(false);
-                                            tipUI.text = "";
+                                            //Switching keys visual showing depends on quantity of actual keys
+                                            keysQuantiny--;
+                                            if (keysQuantiny > 1)
+                                                keyUI.GetComponentInChildren<TextMeshProUGUI>().text = "x" + keysQuantiny;
+                                            else if (keysQuantiny == 1)
+                                                keyUI.GetComponentInChildren<TextMeshProUGUI>().text = "";
+                                            else
+                                                keyUI.SetActive(false);
+                                            
+                                            tipUI.text = " ";
                                             //m_Keys.Remove(m_Key);
                                             return;
                                         }
