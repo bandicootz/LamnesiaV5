@@ -10,8 +10,8 @@ public class MouseLook : MonoBehaviour
 
     float xRotation = 0f;
 
-    [Header("Weapon")]
-    public WeaponController currentWeapon;
+    //[Header("Weapon")]
+    //public WeaponController currentWeapon;
 
     void Start()
     {
@@ -29,9 +29,9 @@ public class MouseLook : MonoBehaviour
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
 
-        if (currentWeapon)
+        //if (currentWeapon)
         {
-            currentWeapon.Initialise(this);
+            //currentWeapon.Initialise(this);
         }
     }
 }
