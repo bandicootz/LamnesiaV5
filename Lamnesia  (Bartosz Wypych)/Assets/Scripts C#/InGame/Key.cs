@@ -8,7 +8,7 @@ namespace Lamnesia.InGame
 
         public bool CanOpen(GameObject door)
         {
-            if (door.GetComponent<Door>().canOpenDoor(valueToPair)) return true;
+            if (door.GetComponent<Door>().CanOpenDoor(valueToPair)) return true;
             else return false;
         }
     }

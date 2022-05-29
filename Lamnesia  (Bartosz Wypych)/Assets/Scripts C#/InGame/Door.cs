@@ -16,7 +16,7 @@ namespace Lamnesia.InGame
             }
         }
 
-        public bool canOpenDoor(int keyValue)
+        public bool CanOpenDoor(int keyValue)
         {
             if (CheckPair(keyValue))
             {
