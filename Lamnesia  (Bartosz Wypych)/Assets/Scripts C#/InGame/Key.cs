@@ -4,7 +4,7 @@ namespace Lamnesia.InGame
 {
     public class Key : MonoBehaviour
     {
-        [SerializeField] private string valueToPair;
+        [SerializeField] private int valueToPair;
 
         public bool CanOpen(GameObject door)
         {

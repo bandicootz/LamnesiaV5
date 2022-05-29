@@ -4,9 +4,9 @@ namespace Lamnesia.InGame
 {
     public class Door : MonoBehaviour
     {
-        [SerializeField] private string _value;
+        [SerializeField] private int _value;
 
-        public bool CheckPair(string keyValue)
+        public bool CheckPair(int keyValue)
         {
             if (_value == keyValue) return true;
             else
@@ -16,7 +16,7 @@ namespace Lamnesia.InGame
             }
         }
 
-        public bool canOpenDoor(string keyValue)
+        public bool canOpenDoor(int keyValue)
         {
             if (CheckPair(keyValue))
             {

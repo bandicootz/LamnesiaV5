@@ -8,21 +8,25 @@ namespace Lamnesia.InGame
     {
         private List<Key> m_Keys;
         private Key m_Key;
-
-        [SerializeField] private Camera cam;
+        private Camera cam;
 
         private float range = 10f;
 
         void Update()
         {
             ShootRaycast();
-
         }
 
+        void Start()
+        {
+            cam = GetComponentInChildren<Camera>();
+        }
+        
         private void ShootRaycast()
         {
             RaycastHit hit;
-            if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
+            if (Physics.Raycast(cam.transform.position,
+                    cam.transform.forward, out hit, range))
             {
                 switch (hit.transform.tag)
                 {
@@ -56,14 +60,15 @@ namespace Lamnesia.InGame
                                     {
                                         if (m_Key.CanOpen(door))
                                         {
-                                            m_Keys.Remove(m_Key);
+                                            door.SetActive(false);
+                                            //m_Keys.Remove(m_Key);
                                             return;
                                         }
                                     }
                                 }
                             }
+                            else Debug.Log("You have no keys bro, door is locked");
                         }
-                        else Debug.Log("You have no keys bro, door is locked");
 
                         break;
                 }
