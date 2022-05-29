@@ -35,6 +35,13 @@ public class Weapon : MonoBehaviour
             fireTimer += Time.deltaTime;
     }
 
+    void FixedUpdated()
+    {
+        AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo(0);
+
+        if (info.IsName("Fire")) anim.SetBool("Fire", false);
+    }
+
     private void Fire()
     {
         if (fireTimer < fireRate) return;
@@ -46,6 +53,8 @@ public class Weapon : MonoBehaviour
             Debug.Log(hit.transform.name + " found! ");
         }
 
+        anim.CrossFadeInFixedTime("Fire", 0.01f);
+        //anim.SetBool("Fire", true);
         currentBullets--;
         fireTimer = 0.0f;
     }
