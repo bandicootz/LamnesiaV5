@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Lamnesia.InGame.Managers;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -12,6 +13,10 @@ namespace Lamnesia.InGame
         private Camera cam;
         private int keysQuantiny = 0;
 
+        [Header("MUSIC PACK FOR EVERY SITATION")]
+        public AudioClip startMusic;
+        public AudioClip seekMusic;
+        
         [Header("TUTORIAL MESSAGES HERE")]
         public string keyTipMessage = "Press [E] to collect a key";
         public string openDoorMessage = "Press [E] to open a door";
@@ -31,6 +36,10 @@ namespace Lamnesia.InGame
         void Start()
         {
             cam = GetComponentInChildren<Camera>();
+            
+            //Start music
+            AudioManager.Instance.PlayMusic(startMusic);
+            AudioManager.Instance.musicSource.loop = true;
         }
         
         private void ShootRaycast()

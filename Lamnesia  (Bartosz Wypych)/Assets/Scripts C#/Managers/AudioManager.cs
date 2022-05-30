@@ -7,7 +7,7 @@ namespace Lamnesia.InGame.Managers
     public class AudioManager : MonoBehaviour
     {
         public static AudioManager Instance;
-        [SerializeField]private AudioSource musicSource;
+        [SerializeField]public AudioSource musicSource;
         [SerializeField] private AudioSource soundSource;
         public bool isSoundOn { get; private set; }
         public bool isMusicOn { get; private set; }
