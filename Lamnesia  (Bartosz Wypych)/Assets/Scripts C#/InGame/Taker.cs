@@ -57,12 +57,14 @@ namespace Lamnesia.InGame
 
                         if (Input.GetKeyDown(KeyCode.E))
                         {
-                            m_Keys.Add(hit.transform.gameObject.GetComponent<Key>());
+                            var key = hit.transform.gameObject.GetComponent<Key>();
+                            m_Keys.Add(key);
                             keysQuantiny++;
                             keyUI.SetActive(true);
                             if (keysQuantiny > 1)
                                 keyUI.GetComponentInChildren<TextMeshProUGUI>().text = "x" + keysQuantiny;
                             
+                            AudioManager.Instance.PlaySound(key.interactSound);
                             hit.transform.gameObject.SetActive(false);
 
                             tipUI.text = " ";
@@ -88,8 +90,6 @@ namespace Lamnesia.InGame
                                     {
                                         if (m_Key.CanOpen(door))
                                         {
-                                            door.SetActive(false);
-
                                             //Switching keys visual showing depends on quantity of actual keys
                                             keysQuantiny--;
                                             if (keysQuantiny > 1)
@@ -98,6 +98,9 @@ namespace Lamnesia.InGame
                                                 keyUI.GetComponentInChildren<TextMeshProUGUI>().text = "";
                                             else
                                                 keyUI.SetActive(false);
+                                            
+                                            AudioManager.Instance.PlaySound(door.GetComponent<Door>().interactSound);
+                                            door.SetActive(false);
                                             
                                             tipUI.text = " ";
                                             //m_Keys.Remove(m_Key);

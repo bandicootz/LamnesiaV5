@@ -5,6 +5,7 @@ namespace Lamnesia.InGame
     public class Door : MonoBehaviour
     {
         [SerializeField] private int _value;
+        public AudioClip interactSound;
 
         public bool CheckPair(int keyValue)
         {
