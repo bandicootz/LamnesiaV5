@@ -5,6 +5,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     private Animator anim;
+    private AudioSource _AudioSource;
 
     public float range = 100f;
     public int bulletsPerMag = 30;
@@ -13,14 +14,20 @@ public class Weapon : MonoBehaviour
     public int currentBullets;
 
     public Transform shootPoint;
+    public ParticleSystem muzzleFlash;
+    public AudioClip shootSound;
 
     public float fireRate = 0.1f;
 
     float fireTimer;
 
+    private bool isReloading;
+
     void Start()
     {
         anim = GetComponent<Animator>();
+        _AudioSource = GetComponent<AudioSource>();
+
         currentBullets = bulletsPerMag;
     }
 
@@ -28,7 +35,16 @@ public class Weapon : MonoBehaviour
     {
         if (Input.GetButton("Fire1"))
         {
-            Fire();
+            if (currentBullets > 0)
+                Fire();
+            else if(bulletsLeft > 0)
+                DoReload();
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            if(currentBullets < bulletsPerMag && bulletsLeft > 0)
+            DoReload();
         }
 
         if (fireTimer < fireRate)
@@ -39,12 +55,14 @@ public class Weapon : MonoBehaviour
     {
         AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo(0);
 
-        if (info.IsName("Fire")) anim.SetBool("Fire", false);
+        isReloading = info.IsName("Reload");
+        //if (info.IsName("Fire")) anim.SetBool("Fire", false);
     }
 
     private void Fire()
     {
-        if (fireTimer < fireRate) return;
+        if (fireTimer < fireRate || currentBullets <=0  || isReloading)
+            return;
 
         RaycastHit hit;
 
@@ -54,8 +72,38 @@ public class Weapon : MonoBehaviour
         }
 
         anim.CrossFadeInFixedTime("Fire", 0.01f);
+        muzzleFlash.Play();
+        PlayShootSound();
+
         //anim.SetBool("Fire", true);
         currentBullets--;
         fireTimer = 0.0f;
+    }
+
+    public void Reload()
+    {
+        if (bulletsLeft <= 0) return;
+
+        int bulletsToLoad = bulletsPerMag - currentBullets;
+        int bulletsToDeduct = (bulletsLeft >= bulletsToLoad) ? bulletsToLoad : bulletsLeft;
+
+        bulletsLeft -= bulletsToDeduct;
+        currentBullets += bulletsToDeduct;
+    }
+
+    private void DoReload()
+    {
+        AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo(0);
+
+        if (isReloading) return;
+
+        anim.CrossFadeInFixedTime("Reload", 0.01f);
+    }
+
+    private void PlayShootSound()
+    {
+        _AudioSource.PlayOneShot(shootSound);
+        //_AudioSource.clip = shootSound;
+       // _AudioSource.Play();
     }
 }
