@@ -13,15 +13,28 @@ public class Weapon : MonoBehaviour
 
     public int currentBullets;
 
+    public enum ShootMode { Auto, Semi }
+    public ShootMode shootingMode;
+
     public Transform shootPoint;
+    public GameObject hitParticles;
+    public GameObject bulletImpact;
+
     public ParticleSystem muzzleFlash;
     public AudioClip shootSound;
 
     public float fireRate = 0.1f;
+    public float damage = 20f;
 
     float fireTimer;
 
     private bool isReloading;
+    private bool isAiming;
+    private bool shootInput;
+
+    private Vector3 originalPosition;
+    public Vector3 aimPosition;
+    public float aodSpeed = 8f;
 
     void Start()
     {
@@ -29,11 +42,23 @@ public class Weapon : MonoBehaviour
         _AudioSource = GetComponent<AudioSource>();
 
         currentBullets = bulletsPerMag;
+        originalPosition = transform.localPosition;
     }
 
     void Update()
     {
-        if (Input.GetButton("Fire1"))
+        switch (shootingMode)
+        {
+            case ShootMode.Auto:
+                shootInput = Input.GetButton("Fire1");
+            break;
+
+            case ShootMode.Semi:
+                shootInput = Input.GetButtonDown("Fire1");
+            break;
+        }
+
+        if (shootInput)
         {
             if (currentBullets > 0)
                 Fire();
@@ -49,6 +74,8 @@ public class Weapon : MonoBehaviour
 
         if (fireTimer < fireRate)
             fireTimer += Time.deltaTime;
+
+        AimDownSights();
     }
 
     void FixedUpdated()
@@ -56,7 +83,23 @@ public class Weapon : MonoBehaviour
         AnimatorStateInfo info = anim.GetCurrentAnimatorStateInfo(0);
 
         isReloading = info.IsName("Reload");
+        anim.SetBool("Aim", isAiming);
         //if (info.IsName("Fire")) anim.SetBool("Fire", false);
+    }
+
+    private void AimDownSights()
+    {
+        if (Input.GetButton("Fire2") && !isReloading)
+        {
+            transform.localPosition = Vector3.Lerp(transform.localPosition, aimPosition, Time.deltaTime * aodSpeed);
+            isAiming = true;
+        }
+
+        else
+        {
+            transform.localPosition = Vector3.Lerp(transform.localPosition, originalPosition, Time.deltaTime * aodSpeed);
+            isAiming = false;
+        }
     }
 
     private void Fire()
@@ -69,6 +112,17 @@ public class Weapon : MonoBehaviour
         if(Physics.Raycast(shootPoint.position, shootPoint.transform.forward, out hit, range))
         {
             Debug.Log(hit.transform.name + " found! ");
+
+            GameObject hitParticleEffect = Instantiate(hitParticles, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
+            GameObject bulletHole = Instantiate(bulletImpact, hit.point, Quaternion.FromToRotation(Vector3.forward, hit.normal));
+
+            Destroy(hitParticleEffect, 2f);
+            Destroy(bulletHole, 3f);
+
+            if (hit.transform.GetComponent<HealthController>())
+            {
+                hit.transform.GetComponent<HealthController>().ApplyDamage(damage);
+            }
         }
 
         anim.CrossFadeInFixedTime("Fire", 0.01f);
