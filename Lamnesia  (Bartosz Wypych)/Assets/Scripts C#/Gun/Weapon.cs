@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -16,6 +17,7 @@ public class Weapon : MonoBehaviour
     public enum ShootMode { Auto, Semi }
     public ShootMode shootingMode;
 
+    public Text ammoText;
     public Transform shootPoint;
     public GameObject hitParticles;
     public GameObject bulletImpact;
@@ -36,6 +38,11 @@ public class Weapon : MonoBehaviour
     public Vector3 aimPosition;
     public float aodSpeed = 8f;
 
+    void OnEnable()
+    {
+        UpdateAmmoText();
+    }
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -43,6 +50,8 @@ public class Weapon : MonoBehaviour
 
         currentBullets = bulletsPerMag;
         originalPosition = transform.localPosition;
+
+        UpdateAmmoText();
     }
 
     void Update()
@@ -131,6 +140,9 @@ public class Weapon : MonoBehaviour
 
         //anim.SetBool("Fire", true);
         currentBullets--;
+
+        UpdateAmmoText();
+
         fireTimer = 0.0f;
     }
 
@@ -143,6 +155,8 @@ public class Weapon : MonoBehaviour
 
         bulletsLeft -= bulletsToDeduct;
         currentBullets += bulletsToDeduct;
+
+        UpdateAmmoText();
     }
 
     private void DoReload()
@@ -159,5 +173,10 @@ public class Weapon : MonoBehaviour
         _AudioSource.PlayOneShot(shootSound);
         //_AudioSource.clip = shootSound;
        // _AudioSource.Play();
+    }
+
+    private void UpdateAmmoText()
+    {
+        ammoText.text = currentBullets + "/" + bulletsLeft;
     }
 }
