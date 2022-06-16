@@ -14706,12 +14706,14 @@ MonoBehaviour:
   shootPoint: {fileID: 2759205003665379343}
   hitParticles: {fileID: 1617700753897852, guid: 2fc51477906b5d44b93e53cc25b2d012, type: 3}
   bulletImpact: {fileID: 1235035097298946, guid: 13a41486f54c3634fb3e501928c77d9d, type: 3}
+  bulletTrail: {fileID: 0}
   muzzleFlash: {fileID: 1450016648074434464}
   shootSound: {fileID: 8300000, guid: 06e6a2b9d33e74957a9dd35435658859, type: 3}
   fireRate: 0.25
   damage: 20
   aimPosition: {x: -0.055, y: 0.07, z: -0.145}
   aodSpeed: 8
+  spreadFactor: 0.1
 --- !u!82 &7130057277895056304
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15571,8 +15573,6 @@ GameObject:
   - component: {fileID: 5313033109108561404}
   - component: {fileID: 5022380426625932400}
   - component: {fileID: 5313033109108560897}
-  - component: {fileID: 2912472614190428923}
-  - component: {fileID: 2912472614190428922}
   - component: {fileID: 5313033109108561406}
   - component: {fileID: 5313033109108560958}
   - component: {fileID: 5313033109108560896}
@@ -15648,37 +15648,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &2912472614190428923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5313033109108560899}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1999370065, guid: dcd2196c4e9166f499793f2007fcda35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
-    _objectReferences:
-    - {fileID: 11400000, guid: 8cbf8e3d718450b449909b158f03af6a, type: 2}
---- !u!114 &2912472614190428922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5313033109108560899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1465209106, guid: c8d0ad23af520fe46aabe2b1fecf6462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
 --- !u!114 &5313033109108561406
 MonoBehaviour:
   m_ObjectHideFlags: 0

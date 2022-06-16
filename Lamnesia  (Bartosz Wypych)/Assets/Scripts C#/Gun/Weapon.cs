@@ -8,6 +8,7 @@ public class Weapon : MonoBehaviour
     private Animator anim;
     private AudioSource _AudioSource;
 
+    [Header("Properties")]
     public float range = 100f;
     public int bulletsPerMag = 30;
     public int bulletsLeft = 200;
@@ -17,12 +18,18 @@ public class Weapon : MonoBehaviour
     public enum ShootMode { Auto, Semi }
     public ShootMode shootingMode;
 
+    [Header("UI")]
     public Text ammoText;
+
+    [Header("Setup")]
     public Transform shootPoint;
     public GameObject hitParticles;
     public GameObject bulletImpact;
+    public LineRenderer bulletTrail;
 
     public ParticleSystem muzzleFlash;
+
+    [Header("Sound Effects")]
     public AudioClip shootSound;
 
     public float fireRate = 0.1f;
@@ -35,8 +42,12 @@ public class Weapon : MonoBehaviour
     private bool shootInput;
 
     private Vector3 originalPosition;
+
+    [Header("ADS")]
     public Vector3 aimPosition;
     public float aodSpeed = 8f;
+
+    public float spreadFactor = 0.1f;
 
     void OnEnable()
     {
@@ -118,7 +129,13 @@ public class Weapon : MonoBehaviour
 
         RaycastHit hit;
 
-        if(Physics.Raycast(shootPoint.position, shootPoint.transform.forward, out hit, range))
+        Vector3 shootDirection = shootPoint.transform.forward;
+        shootDirection = shootDirection + shootPoint.TransformDirection
+        (new Vector3(Random.Range(-spreadFactor, spreadFactor), Random.Range(-spreadFactor, spreadFactor)));
+        //shootDirection.x += Random.Range(-spreadFactor, spreadFactor);
+        //shootDirection.y += Random.Range(-spreadFactor, spreadFactor);
+
+        if (Physics.Raycast(shootPoint.position, shootDirection, out hit, range))
         {
             Debug.Log(hit.transform.name + " found! ");
 
@@ -132,6 +149,8 @@ public class Weapon : MonoBehaviour
             {
                 hit.transform.GetComponent<HealthController>().ApplyDamage(damage);
             }
+
+            SpawnBulletTrail(hit.point);
         }
 
         anim.CrossFadeInFixedTime("Fire", 0.01f);
@@ -144,6 +163,18 @@ public class Weapon : MonoBehaviour
         UpdateAmmoText();
 
         fireTimer = 0.0f;
+    }
+
+    private void SpawnBulletTrail(Vector3 hitPoint)
+    {
+        GameObject bulletTrailEffect = Instantiate(bulletTrail.gameObject, shootPoint.position, Quaternion.identity);
+
+        LineRenderer lineR = bulletTrailEffect.GetComponent<LineRenderer>();
+
+        lineR.SetPosition(0, shootPoint.position);
+        lineR.SetPosition(1, hitPoint);
+
+        Destroy(bulletTrailEffect, 1f);
     }
 
     public void Reload()
