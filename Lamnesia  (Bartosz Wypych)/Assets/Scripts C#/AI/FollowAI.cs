@@ -14,9 +14,9 @@ public class FollowAI : MonoBehaviour
 
     public States currentState;
 
-    private int currentWayPoints;
+    private int currentWayPoint;
 
-    void Start()
+    private void Start()
     {
         if (agent == null)
         {
@@ -25,7 +25,7 @@ public class FollowAI : MonoBehaviour
         
     }
 
-    void Update()
+    private void Update()
     {
         UpdateStates();
     }
@@ -48,14 +48,14 @@ public class FollowAI : MonoBehaviour
 
     private void Patrol()
     {
-        if(agent.destination != wayPoints[currentWayPoints].position)
+        if (agent.destination != wayPoints[currentWayPoint].position)
         {
-            agent.destination = wayPoints[currentWayPoints].position;
+            agent.destination = wayPoints[currentWayPoint].position;
         }
 
         if (HasReached())
         {
-            currentWayPoints = (currentWayPoints + 1) % wayPoints.Length;
+            currentWayPoint = (currentWayPoint + 1) % wayPoints.Length;
         }
     }
 
