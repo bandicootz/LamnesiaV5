@@ -74,6 +74,6 @@ public class FollowAI : MonoBehaviour
 
     private bool HasReached()
     {
-        return (agent.hasPath && !agent.pathPending && agent.remainingDistance <= agent.stoppingDistance);
+        return (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance);
     }
 }
