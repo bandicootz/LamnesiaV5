@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Lamnesia.InGame.Managers;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -17,8 +18,22 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    private Vector3 lastPos;
+    private Vector3 currPos;
+    private bool isJumping;
+    
+    [Header("Sounds here")] 
+    public AudioClip footStepsSound;
+    public AudioClip jumpSound;
+
+    void Start()
+    {
+        currPos = gameObject.transform.position;
+    }
+    
     void Update()
     {
+        lastPos = currPos;
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if(isGrounded && velocity.y < 0)
@@ -35,11 +50,23 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
+            if (jumpSound != null) AudioManager.Instance.PlaySound(jumpSound);
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
 
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
+
+        currPos = transform.position;
+
+        if (currPos != lastPos)
+        {
+            if (!AudioManager.Instance.soundSource.isPlaying)
+            {
+                if (footStepsSound != null && isGrounded)
+                    AudioManager.Instance.PlaySound(footStepsSound); // if we have multiple sounds in same time may sound bug occure, extra sound manager needed
+            }
+        }
     }
 }

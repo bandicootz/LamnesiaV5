@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Lamnesia.InGame.Managers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -15,10 +16,14 @@ namespace Lamnesia.Player
         private const float HigherBound = 100f;
 
         [SerializeField] private GameObject loseScreen;
-        
+
         [Header("Health")]
         public float maxHealth = 100f;
         public Image healthBar;
+
+        [Header("Death sound/music")] 
+        public AudioClip deathMusic;
+        public AudioClip deathSound;
 
         private void Awake()
         {
@@ -51,7 +56,8 @@ namespace Lamnesia.Player
         private void PlayDeath()
         {
             loseScreen.SetActive(true);
-            //play lose sound
+            AudioManager.Instance.PlaySound(deathSound);
+            AudioManager.Instance.PlayMusic(deathMusic);
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Lamnesia.InGame
         [Header("MUSIC PACK FOR EVERY SITATION")]
         public AudioClip startMusic;
         public AudioClip seekMusic;
-        
+
         [Header("TUTORIAL MESSAGES HERE")]
         public string keyTipMessage = "Press [E] to collect a key";
         public string openDoorMessage = "Press [E] to open a door";

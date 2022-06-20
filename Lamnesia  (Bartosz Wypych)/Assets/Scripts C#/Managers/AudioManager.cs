@@ -8,7 +8,7 @@ namespace Lamnesia.InGame.Managers
     {
         public static AudioManager Instance;
         [SerializeField]public AudioSource musicSource;
-        [SerializeField] private AudioSource soundSource;
+        [SerializeField] public AudioSource soundSource;
         public bool isSoundOn { get; private set; }
         public bool isMusicOn { get; private set; }
 
