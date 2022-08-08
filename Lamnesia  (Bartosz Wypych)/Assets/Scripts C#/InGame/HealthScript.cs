@@ -14,6 +14,7 @@ namespace Lamnesia.Player
         
         private const float LowerBound = 0;
         private const float HigherBound = 100f;
+        private bool isDead = false;
 
         [SerializeField] private GameObject loseScreen;
 
@@ -53,11 +54,23 @@ namespace Lamnesia.Player
             healthBar.fillAmount = health / maxHealth;
         }
 
-        private void PlayDeath()
+        public void PlayDeath()
         {
-            loseScreen.SetActive(true);
+            if (loseScreen != null) loseScreen.SetActive(true);
+            isDead = true;
+            Cursor.lockState = CursorLockMode.None;
             AudioManager.Instance.PlaySound(deathSound);
             AudioManager.Instance.PlayMusic(deathMusic);
+        }
+
+
+        private void Update()
+        {
+            if (isDead)
+            {
+                if (Input.GetKeyDown(KeyCode.Escape)) SceneManager.LoadScene(0);
+                if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(1);
+            }
         }
     }
 }

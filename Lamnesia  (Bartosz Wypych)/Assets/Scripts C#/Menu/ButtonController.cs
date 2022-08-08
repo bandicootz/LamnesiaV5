@@ -10,6 +10,7 @@ namespace Lamnesia.InGame.Menu
         private Button m_Btn;
         [SerializeField] private GameObject settingsPanel;
         [SerializeField] private GameObject creditsPanel;
+        [SerializeField] private GameObject loadingScreen;
 
         private void Awake()
         {
@@ -29,12 +30,22 @@ namespace Lamnesia.InGame.Menu
                     settingsPanel.SetActive(true);
                     break;
                 case "StartButton":
-                    SceneManager.LoadScene(1);
+                    SceneManager.LoadSceneAsync(1);
+                    loadingScreen.SetActive(true);
                     break;
                 case "CreditsButton":
                     creditsPanel.SetActive(true);
                     break;
+                case "ExitButton":
+                    Application.Quit();
+                    break;
             }
         }
+
+        //private void Update()
+        //{
+        //    if (loadingScreen !=null && loadingScreen.activeSelf)
+        //            loadingScreen.GetComponent<Image>().fillAmount += (float)0.1; 
+        //}
     }
 }
