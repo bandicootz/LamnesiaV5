@@ -11,7 +11,9 @@ namespace Lamnesia.Player
     public class HealthScript : MonoBehaviour
     {
         public float health { get; private set; }
-        
+
+        public float enemyDamage = 10;
+
         private const float LowerBound = 0;
         private const float HigherBound = 100f;
         private bool isDead = false;
@@ -63,13 +65,20 @@ namespace Lamnesia.Player
             AudioManager.Instance.PlayMusic(deathMusic);
         }
 
-
         private void Update()
         {
             if (isDead)
             {
                 if (Input.GetKeyDown(KeyCode.Escape)) SceneManager.LoadScene(0);
                 if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(1);
+            }
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.gameObject.name.Contains("Enemy"))
+            {
+                ChangeHealth(-enemyDamage);
             }
         }
     }
