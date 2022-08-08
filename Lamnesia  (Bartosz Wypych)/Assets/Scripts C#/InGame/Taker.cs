@@ -26,7 +26,7 @@ namespace Lamnesia.InGame
         [SerializeField] private TextMeshProUGUI tipUI;
         [SerializeField] private GameObject keyUI;
 
-        private float range = 10f;
+        private float range = 5f;
 
         void Update()
         {

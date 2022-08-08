@@ -12,15 +12,22 @@ namespace Lamnesia.Player
         TextMeshProUGUI timeText;
         HealthScript healthScript;
 
+        private float time = 0;
         private void Start()
         {
             // Starts the timer automatically
-            timerIsRunning = true;
             timeText = GetComponent<TextMeshProUGUI>();
             healthScript = GetComponentInParent<HealthScript>();
         }
         void LateUpdate()
         {
+            if (time < 25)
+            {
+                time += Time.deltaTime;
+                if (time >= 45)
+                    timerIsRunning = true;
+            }
+
             if (timerIsRunning)
             {
                 if (timeRemaining > 0)

@@ -15,5 +15,4 @@ public class HealthController : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 }

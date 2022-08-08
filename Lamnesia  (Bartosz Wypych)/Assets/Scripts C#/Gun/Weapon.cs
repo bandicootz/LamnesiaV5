@@ -49,6 +49,8 @@ public class Weapon : MonoBehaviour
 
     public float spreadFactor = 0.1f;
 
+    private float time = 0f;
+
     void OnEnable()
     {
         UpdateAmmoText();
@@ -67,35 +69,41 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        switch (shootingMode)
+        if (time < 45f)
+            time += Time.deltaTime;
+
+        if (time >= 45)
         {
-            case ShootMode.Auto:
-                shootInput = Input.GetButton("Fire1");
-            break;
+            switch (shootingMode)
+            {
+                case ShootMode.Auto:
+                    shootInput = Input.GetButton("Fire1");
+                    break;
 
-            case ShootMode.Semi:
-                shootInput = Input.GetButtonDown("Fire1");
-            break;
+                case ShootMode.Semi:
+                    shootInput = Input.GetButtonDown("Fire1");
+                    break;
+            }
+
+            if (shootInput)
+            {
+                if (currentBullets > 0)
+                    Fire();
+                else if (bulletsLeft > 0)
+                    DoReload();
+            }
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                if (currentBullets < bulletsPerMag && bulletsLeft > 0)
+                    DoReload();
+            }
+
+            if (fireTimer < fireRate)
+                fireTimer += Time.deltaTime;
+
+            AimDownSights();
         }
-
-        if (shootInput)
-        {
-            if (currentBullets > 0)
-                Fire();
-            else if(bulletsLeft > 0)
-                DoReload();
-        }
-
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            if(currentBullets < bulletsPerMag && bulletsLeft > 0)
-            DoReload();
-        }
-
-        if (fireTimer < fireRate)
-            fireTimer += Time.deltaTime;
-
-        AimDownSights();
     }
 
     void FixedUpdated()
