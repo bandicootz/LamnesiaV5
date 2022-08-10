@@ -15,11 +15,11 @@ C:/Users/DOMINIKA/Documents/LamnesiaV5/Lamnesia  (Bartosz Wypych)
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54873
+55439
 Successfully changed project path to: C:/Users/DOMINIKA/Documents/LamnesiaV5/Lamnesia  (Bartosz Wypych)
 C:/Users/DOMINIKA/Documents/LamnesiaV5/Lamnesia  (Bartosz Wypych)
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 78.84 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 69.95 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.21f1 (a38c86f6690f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Resources/UnitySubsystems
@@ -35,19 +35,19 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56016
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56100
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001678 seconds.
+Registered in 0.001672 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 50.45 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 52.52 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.865 seconds
+- Completed reload, in  0.916 seconds
 Domain Reload Profiling:
-	ReloadAssembly (866ms)
-		BeginReloadAssembly (49ms)
+	ReloadAssembly (916ms)
+		BeginReloadAssembly (48ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
@@ -56,15 +56,15 @@ Domain Reload Profiling:
 		EndReloadAssembly (357ms)
 			LoadAssemblies (47ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (110ms)
+			SetupTypeCache (106ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (149ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (151ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (51ms)
-				BeforeProcessingInitializeOnLoad (7ms)
+				RefreshPlugins (53ms)
+				BeforeProcessingInitializeOnLoad (6ms)
 				ProcessInitializeOnLoadAttributes (64ms)
 				ProcessInitializeOnLoadMethodAttributes (24ms)
 				AfterProcessingInitializeOnLoad (0ms)
@@ -73,34 +73,34 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003293 seconds.
+Registered in 0.003106 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 53.52 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 61.20 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.778 seconds
+- Completed reload, in  0.818 seconds
 Domain Reload Profiling:
-	ReloadAssembly (778ms)
-		BeginReloadAssembly (122ms)
+	ReloadAssembly (818ms)
+		BeginReloadAssembly (127ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (608ms)
-			LoadAssemblies (88ms)
+		EndReloadAssembly (641ms)
+			LoadAssemblies (101ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (175ms)
+			SetupTypeCache (187ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (222ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (233ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (54ms)
-				BeforeProcessingInitializeOnLoad (67ms)
-				ProcessInitializeOnLoadAttributes (87ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (61ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (88ms)
 				ProcessInitializeOnLoadMethodAttributes (6ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
@@ -110,14 +110,14 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3173 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 143.2 MB.
-System memory in use after: 143.3 MB.
+System memory in use before: 143.7 MB.
+System memory in use after: 143.9 MB.
 
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 3615.
-Total: 2.679400 ms (FindLiveObjects: 0.359500 ms CreateObjectMapping: 0.087900 ms MarkObjects: 2.137300 ms  DeleteObjects: 0.094000 ms)
+Total: 2.599700 ms (FindLiveObjects: 0.281100 ms CreateObjectMapping: 0.091100 ms MarkObjects: 2.128500 ms  DeleteObjects: 0.097900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,1137 +131,1209 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Characters/AI.prefab
-  artifactKey: Guid(2fabfbb3627fe034eb21ae9f62545d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/AI.prefab using Guid(2fabfbb3627fe034eb21ae9f62545d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b78e7e44466ba152b9cc5bc315f73f') in 0.250462 seconds 
-  Import took 0.255262 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Characters/Enemy1.blend
-  artifactKey: Guid(6070930c3d0bb5143b544e6764f45803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Enemy1.blend using Guid(6070930c3d0bb5143b544e6764f45803) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37a459d301828e585ff20e2f9b161422') in 0.247493 seconds 
-  Import took 0.251888 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Characters/Enemyy.blend
-  artifactKey: Guid(4c7a67c7c80f34e4b8c3398709ba5aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Enemyy.blend using Guid(4c7a67c7c80f34e4b8c3398709ba5aed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa1198a6c5257d05affad401de3dccd7') in 0.043995 seconds 
-  Import took 0.048431 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Characters/First Person Player.prefab
-  artifactKey: Guid(7f55aa98aa3b4f84ebcbac368d31837e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/First Person Player.prefab using Guid(7f55aa98aa3b4f84ebcbac368d31837e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a0e6ff2fd9d12b9ae9750dd0fc77312') in 0.124193 seconds 
-  Import took 0.129618 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.847895 seconds.
   path: Assets/Scenes
   artifactKey: Guid(67ed61444a2ad4d44934906e9bd44b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(67ed61444a2ad4d44934906e9bd44b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b0c9c670e42e90fec035eed029dc48') in 0.002922 seconds 
-  Import took 0.007337 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.391720 seconds.
-  path: Assets/Scenes/Lamnesia.unity
-  artifactKey: Guid(00c9509b10ff30047b54982b38180d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Lamnesia.unity using Guid(00c9509b10ff30047b54982b38180d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64c8435eeee3a1adb1f199f3747bac47') in 0.003066 seconds 
-  Import took 0.007412 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 92.843808 seconds.
-  path: Assets/Characters/Ver1
-  artifactKey: Guid(c227ea8864834424e9a6790f90ce0b3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1 using Guid(c227ea8864834424e9a6790f90ce0b3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc8c095defd197e26be6ca023c54f27') in 0.002639 seconds 
-  Import took 0.007152 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.053912 seconds.
-  path: Assets/Characters/Ver1/Enemy1.blend
-  artifactKey: Guid(dac1da7c5884137438e1011afe6f734c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1.blend using Guid(dac1da7c5884137438e1011afe6f734c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8d321903f642dd5225de8ac3bd6e8ac') in 0.125727 seconds 
-  Import took 0.131390 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000211 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Skin_Roughness.1001.png
-  artifactKey: Guid(74699249d7957d9439da58e9dac955b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Skin_Roughness.1001.png using Guid(74699249d7957d9439da58e9dac955b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2f4fd73754c50bba9f0990b00a3a9ee') in 0.019506 seconds 
-  Import took 0.024022 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Skull_Normal.1001.png
-  artifactKey: Guid(0d96cd5c83635ce47b5a30e9e4d253f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Skull_Normal.1001.png using Guid(0d96cd5c83635ce47b5a30e9e4d253f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77243f31dec2b27af4468f2ec29a9db4') in 0.012375 seconds 
-  Import took 0.016194 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Belt_Normal.1001.png
-  artifactKey: Guid(151859dc945e69e4b957f2d99ee5f5b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Belt_Normal.1001.png using Guid(151859dc945e69e4b957f2d99ee5f5b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b96a83e1b1747373c36225ff360f0a3') in 0.010394 seconds 
-  Import took 0.014214 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Skin_BaseColor.1001.png
-  artifactKey: Guid(6ea12c7135c04de44a23eebc006bfea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Skin_BaseColor.1001.png using Guid(6ea12c7135c04de44a23eebc006bfea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17b9acf31c7aa3b3ff37fe3f9c3155e3') in 0.009542 seconds 
-  Import took 0.013568 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Skull_Roughness.1001.png
-  artifactKey: Guid(d374d25392fb4344d93367b7e0d3021a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Skull_Roughness.1001.png using Guid(d374d25392fb4344d93367b7e0d3021a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '086b9261082a049c7ebf52ed91230c81') in 0.008791 seconds 
-  Import took 0.013007 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Skin_Normal.1001.png
-  artifactKey: Guid(8a80cecfdf71e2444b3bd42b4dd35e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Skin_Normal.1001.png using Guid(8a80cecfdf71e2444b3bd42b4dd35e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e35db8af36a68c41e561d2d9a2fc59c') in 0.012800 seconds 
-  Import took 0.016951 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Belt_BaseColor.1001.png
-  artifactKey: Guid(c3a334aa43309e447a3e6ce8b736bba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Belt_BaseColor.1001.png using Guid(c3a334aa43309e447a3e6ce8b736bba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6506b723105b209fb83bd1ed81f6138') in 0.012197 seconds 
-  Import took 0.016512 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000208 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Belt_Height.1001.png
-  artifactKey: Guid(9e076026517542844b5c2ac58f68339a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Belt_Height.1001.png using Guid(9e076026517542844b5c2ac58f68339a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b38a1597f43fc6cafd7fe2d1c1bd25d8') in 0.013092 seconds 
-  Import took 0.017684 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Skull_BaseColor.1001.png
-  artifactKey: Guid(8ffee213e2cf06946910b2a5901ffb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Skull_BaseColor.1001.png using Guid(8ffee213e2cf06946910b2a5901ffb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22113b5900759547606fd9def6fca818') in 0.026457 seconds 
-  Import took 0.030768 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000216 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Belt_Metallic.1001.png
-  artifactKey: Guid(d9021eb3a8e554c4aa334851efcf1ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Belt_Metallic.1001.png using Guid(d9021eb3a8e554c4aa334851efcf1ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dd3741a426ee25c7f86711501fd715f') in 0.015378 seconds 
-  Import took 0.019983 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Material_Metallic.1001.png
-  artifactKey: Guid(0aef4ac7bf239d04b9da8a7a327c81e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Material_Metallic.1001.png using Guid(0aef4ac7bf239d04b9da8a7a327c81e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3839333c11824453dda8f8289d79a34c') in 0.010096 seconds 
-  Import took 0.015212 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Skin_Metallic.1001.png
-  artifactKey: Guid(db9db1782763c0140b1f78bb40bbbe5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Skin_Metallic.1001.png using Guid(db9db1782763c0140b1f78bb40bbbe5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99079bf1fe029459232cd84d6ad86b62') in 0.010301 seconds 
-  Import took 0.015109 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Skull_Height.1001.png
-  artifactKey: Guid(cc889967ac15f9a4da906214eccb43ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Skull_Height.1001.png using Guid(cc889967ac15f9a4da906214eccb43ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb69c8d525fdabdee002937ff6606300') in 0.008687 seconds 
-  Import took 0.013340 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Belt_Roughness.1001.png
-  artifactKey: Guid(347de6f29f712264b9c36319ef176455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Belt_Roughness.1001.png using Guid(347de6f29f712264b9c36319ef176455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7d190abe15420a6e751532f873e3948') in 0.009997 seconds 
-  Import took 0.014844 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Horns_Roughness.1001.png
-  artifactKey: Guid(12bbd025af79acb4db5f4ae835b8255b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Horns_Roughness.1001.png using Guid(12bbd025af79acb4db5f4ae835b8255b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4e5c9dec1f11188633f6f66da23137a') in 0.008879 seconds 
-  Import took 0.013447 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Horns_BaseColor.1001.png
-  artifactKey: Guid(508a92f5333e7a74d909c826cbe22a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Horns_BaseColor.1001.png using Guid(508a92f5333e7a74d909c826cbe22a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cd26ad64dd473cffe3d3d40e6cf3da8') in 0.011914 seconds 
-  Import took 0.016588 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Material_Roughness.1001.png
-  artifactKey: Guid(54f518bb07047cb41adb03b447a0d0c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Material_Roughness.1001.png using Guid(54f518bb07047cb41adb03b447a0d0c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e97e61f23bb200b6a506c38b24e8c619') in 0.010680 seconds 
-  Import took 0.015512 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/Characters/Ver1/Enemy1.fbx
-  artifactKey: Guid(54ecc0933d8ce494bba4a262d455cdfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1.fbx using Guid(54ecc0933d8ce494bba4a262d455cdfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052d003f7f2419890c264f372d5e1964') in 0.035956 seconds 
-  Import took 0.041245 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Material_Height.1001.png
-  artifactKey: Guid(a4757cee67b05bf4e956cee91e1be595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Material_Height.1001.png using Guid(a4757cee67b05bf4e956cee91e1be595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62796fd0302b7c8ebb721c330189cdac') in 0.010562 seconds 
-  Import took 0.015423 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Skin_Height.1001.png
-  artifactKey: Guid(12bde6a20455a054395dc43d6053deaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Skin_Height.1001.png using Guid(12bde6a20455a054395dc43d6053deaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde19286954854b65ca4f2dbdc03206f') in 0.009441 seconds 
-  Import took 0.014110 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Horns_Normal.1001.png
-  artifactKey: Guid(12958bd9b1784d04cb35bf3f6b8df9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Horns_Normal.1001.png using Guid(12958bd9b1784d04cb35bf3f6b8df9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50cc29eea6c7e225a7b2bf69e61fcdf6') in 0.009631 seconds 
-  Import took 0.014337 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Horns_Height.1001.png
-  artifactKey: Guid(ce82e43cdea39d143a307999c4a7bf8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Horns_Height.1001.png using Guid(ce82e43cdea39d143a307999c4a7bf8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05aaf038db04861c3454fa0c375e3a15') in 0.011007 seconds 
-  Import took 0.015499 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Skull_Metallic.1001.png
-  artifactKey: Guid(c280487ed9a1b304b9290aaf09f0ca3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Skull_Metallic.1001.png using Guid(c280487ed9a1b304b9290aaf09f0ca3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16baeae4f36d4d569f40e2e009bc1ed3') in 0.008335 seconds 
-  Import took 0.012908 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Horns_Metallic.1001.png
-  artifactKey: Guid(67b2277b9a0c8b44b9c76a8a57714331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Horns_Metallic.1001.png using Guid(67b2277b9a0c8b44b9c76a8a57714331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d2d07a84b3cc125bd04dfc9f40e6a0') in 0.010899 seconds 
-  Import took 0.015619 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Material_Normal.1001.png
-  artifactKey: Guid(d4bb6fbcb5829f441aa3685c0376ce2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Material_Normal.1001.png using Guid(d4bb6fbcb5829f441aa3685c0376ce2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72f5221fefb65f5ced831bf807945de3') in 0.010389 seconds 
-  Import took 0.015782 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Characters/Ver1/Enemy1_Material_BaseColor.1001.png
-  artifactKey: Guid(333a109d5c61eab4091e8804addffe29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1_Material_BaseColor.1001.png using Guid(333a109d5c61eab4091e8804addffe29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb00c47f3748f862dff183da6e78b1b') in 0.008688 seconds 
-  Import took 0.013333 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 68.505704 seconds.
-  path: Assets/Characters/Ver1/belt.jpg
-  artifactKey: Guid(8069b7a1e4813d1408238d502059ba98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/belt.jpg using Guid(8069b7a1e4813d1408238d502059ba98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0024735703a827be3ff014b9e054be76') in 0.011693 seconds 
-  Import took 0.017069 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.341038 seconds.
-  path: Assets/Characters/Ver1/Materials
-  artifactKey: Guid(dd4b4fb9fa881ff4aad5dee5cfd7f97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Materials using Guid(dd4b4fb9fa881ff4aad5dee5cfd7f97d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '827aba0ccf801cc70bb73a7d2495f5e5') in 0.002586 seconds 
-  Import took 0.007629 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.045103 seconds.
-  path: Assets/Characters/Ver1/Materials/belt.mat
-  artifactKey: Guid(a48c7ef3549ac8b46ab1017c24c40999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Materials/belt.mat using Guid(a48c7ef3549ac8b46ab1017c24c40999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7deda83f35e8486400d36f990fa227f6') in 0.010810 seconds 
-  Import took 0.015456 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 63.720038 seconds.
-  path: Assets/Sounds/Hide and Seek Music Pack/8. Hide and Seek.mp3
-  artifactKey: Guid(675ab8bfa37ec4493b37742561c9090a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Hide and Seek Music Pack/8. Hide and Seek.mp3 using Guid(675ab8bfa37ec4493b37742561c9090a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab38edb03a69acb3f27bfc059ca5d118') in 0.018203 seconds 
-  Import took 0.024250 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Sounds/Hide and Seek Music Pack/Loops/9. Hide and Seek (Loop 3).mp3
-  artifactKey: Guid(94ad750d38b9743e0bc9d5fbe0125161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Hide and Seek Music Pack/Loops/9. Hide and Seek (Loop 3).mp3 using Guid(94ad750d38b9743e0bc9d5fbe0125161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a898e5cfc469e8d5a95aa3fd9941e42c') in 0.051404 seconds 
-  Import took 0.057627 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/Sounds/Hide and Seek Music Pack/Loops/9. Hide and Seek (Loop 7).mp3
-  artifactKey: Guid(ca681ea3c4a45411f93e81c4bdce5ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Hide and Seek Music Pack/Loops/9. Hide and Seek (Loop 7).mp3 using Guid(ca681ea3c4a45411f93e81c4bdce5ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a101bc3d0cc3748d38e9e2132ba0987') in 0.051007 seconds 
-  Import took 0.057282 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000223 seconds.
-  path: Assets/Sounds/Hide and Seek Music Pack/Loops/9. Hide and Seek (Loop 5).mp3
-  artifactKey: Guid(1a0dbb25795b34df1a37471bcf85871c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Hide and Seek Music Pack/Loops/9. Hide and Seek (Loop 5).mp3 using Guid(1a0dbb25795b34df1a37471bcf85871c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ba0985993b45717338640e39f7bfd5') in 0.019104 seconds 
-  Import took 0.025036 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000220 seconds.
-  path: Assets/Sounds/Hide and Seek Music Pack/Loops/9. Hide and Seek (Loop 2).mp3
-  artifactKey: Guid(2526d9e58c7fe4c3f92c3e86db60b87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Hide and Seek Music Pack/Loops/9. Hide and Seek (Loop 2).mp3 using Guid(2526d9e58c7fe4c3f92c3e86db60b87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c9f2d3fda307657300daa1959489360') in 0.011535 seconds 
-  Import took 0.016982 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Sounds/Hide and Seek Music Pack/Loops/9. Hide and Seek (Loop 6).mp3
-  artifactKey: Guid(577ced533710a4083b73067533041d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Hide and Seek Music Pack/Loops/9. Hide and Seek (Loop 6).mp3 using Guid(577ced533710a4083b73067533041d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f87c943d8fea51dbdc9c1f8449fbdff5') in 0.010881 seconds 
-  Import took 0.016779 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Sounds/Hide and Seek Music Pack/Loops/9. Hide and Seek (Loop 4).mp3
-  artifactKey: Guid(1de1d9bdfd5d24fe2831bd52fead0b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Hide and Seek Music Pack/Loops/9. Hide and Seek (Loop 4).mp3 using Guid(1de1d9bdfd5d24fe2831bd52fead0b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2739af3d09db6edf5548e3cc8b1a7e54') in 0.009756 seconds 
-  Import took 0.014294 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Sounds/Hide and Seek Music Pack/Loops/9. Hide and Seek (Loop 1).mp3
-  artifactKey: Guid(7939ec4f6971643899d63670e11a7cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/Hide and Seek Music Pack/Loops/9. Hide and Seek (Loop 1).mp3 using Guid(7939ec4f6971643899d63670e11a7cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b2d86acfe2985aced60dfba18d2347f') in 0.010937 seconds 
-  Import took 0.016003 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.499378 seconds.
-  path: Assets/Sounds/ZombieHorrorPackageFree/MP3/BodyFall/Foley_BodyFall_001.mp3
-  artifactKey: Guid(0303965853d4a43f1a077ffde9c3d1e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/ZombieHorrorPackageFree/MP3/BodyFall/Foley_BodyFall_001.mp3 using Guid(0303965853d4a43f1a077ffde9c3d1e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a33c03ed0639bd111670d946c96f63a') in 0.009880 seconds 
-  Import took 0.014656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Sounds/ZombieHorrorPackageFree/MP3/BodyFall/Foley_BodyFall_002.mp3
-  artifactKey: Guid(fa0eeb256b6b9468c95fc7ad53e7b782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/ZombieHorrorPackageFree/MP3/BodyFall/Foley_BodyFall_002.mp3 using Guid(fa0eeb256b6b9468c95fc7ad53e7b782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '788ec311d71e6a2572da93cb1a966327') in 0.015664 seconds 
-  Import took 0.019993 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Sounds/ZombieHorrorPackageFree/OGG/BodyFall/Foley_BodyFall_002.ogg
-  artifactKey: Guid(812fc44a5cc5f483c97d99114cac682c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/ZombieHorrorPackageFree/OGG/BodyFall/Foley_BodyFall_002.ogg using Guid(812fc44a5cc5f483c97d99114cac682c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c16211663ef114ba91afaf5d7df62688') in 0.014835 seconds 
-  Import took 0.019439 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/Sounds/ZombieHorrorPackageFree/OGG/BodyFall/Foley_BodyFall_003.ogg
-  artifactKey: Guid(bc7949420fadd45d990faa80abb3948f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/ZombieHorrorPackageFree/OGG/BodyFall/Foley_BodyFall_003.ogg using Guid(bc7949420fadd45d990faa80abb3948f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcef6666bcd614b491bad7b12958f582') in 0.009702 seconds 
-  Import took 0.014232 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001159 seconds.
-  path: Assets/Sounds/ZombieHorrorPackageFree/MP3/BodyFall/Foley_BodyFall_003.mp3
-  artifactKey: Guid(9bc3698e477ac4560b31718c410cd66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/ZombieHorrorPackageFree/MP3/BodyFall/Foley_BodyFall_003.mp3 using Guid(9bc3698e477ac4560b31718c410cd66f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a2640d9c71584b114180d1c465efb59') in 0.014367 seconds 
-  Import took 0.018829 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000340 seconds.
-  path: Assets/Sounds/ZombieHorrorPackageFree/OGG/Foley/Foley_Crawling_A_001.ogg
-  artifactKey: Guid(7898a69303649450b84bfae2de31e273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/ZombieHorrorPackageFree/OGG/Foley/Foley_Crawling_A_001.ogg using Guid(7898a69303649450b84bfae2de31e273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06a80bf4fa42f95b185dd0e7f81c2234') in 0.009471 seconds 
-  Import took 0.014662 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Sounds/ZombieHorrorPackageFree/OGG/BodyFall/Foley_BodyFall_001.ogg
-  artifactKey: Guid(a5759a929020b41cab58b6c41974862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/ZombieHorrorPackageFree/OGG/BodyFall/Foley_BodyFall_001.ogg using Guid(a5759a929020b41cab58b6c41974862a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90165a16effd92c3e4e895cb94da360d') in 0.010733 seconds 
-  Import took 0.015188 seconds .
+Start importing Assets/Scenes using Guid(67ed61444a2ad4d44934906e9bd44b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52b0c9c670e42e90fec035eed029dc48') in 0.006380 seconds 
+  Import took 0.010800 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000210 seconds.
-  path: Assets/Sounds/ZombieHorrorPackageFree/MP3/Foley/Foley_Crawling_A_001.mp3
-  artifactKey: Guid(0bf733812c45a440fa17e4e2cc45f7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/ZombieHorrorPackageFree/MP3/Foley/Foley_Crawling_A_001.mp3 using Guid(0bf733812c45a440fa17e4e2cc45f7ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d56447a2314ba0ed0473ebef0c41274') in 0.014193 seconds 
-  Import took 0.018836 seconds .
+  path: Assets/Scenes/Lamnesia.unity
+  artifactKey: Guid(00c9509b10ff30047b54982b38180d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lamnesia.unity using Guid(00c9509b10ff30047b54982b38180d28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92f9682d3920826554c2184f12a860ef') in 0.009122 seconds 
+  Import took 0.013047 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.140691 seconds.
-  path: Assets/Sounds/ZombieHorrorPackageFree/MP3/Foley/Foley_Crawling_A_002.mp3
-  artifactKey: Guid(8f6b5e65abc3f4d4abcf5d113841cda8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/ZombieHorrorPackageFree/MP3/Foley/Foley_Crawling_A_002.mp3 using Guid(8f6b5e65abc3f4d4abcf5d113841cda8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '004bc4a7692246d27f48b8df7968ab72') in 0.010360 seconds 
-  Import took 0.015071 seconds .
+  Time since last request: 16.517591 seconds.
+  path: Assets/Characters/First Person Player.prefab
+  artifactKey: Guid(7f55aa98aa3b4f84ebcbac368d31837e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/First Person Player.prefab using Guid(7f55aa98aa3b4f84ebcbac368d31837e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a0e6ff2fd9d12b9ae9750dd0fc77312') in 0.368160 seconds 
+  Import took 0.373907 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.366863 seconds.
+  path: Assets/Characters/Ver1
+  artifactKey: Guid(c227ea8864834424e9a6790f90ce0b3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1 using Guid(c227ea8864834424e9a6790f90ce0b3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58ba248c7bcea954cc8b517cdaba3219') in 0.002703 seconds 
+  Import took 0.007358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.087571 seconds.
+  path: Assets/Characters/Ver1/belt.jpg
+  artifactKey: Guid(8069b7a1e4813d1408238d502059ba98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/belt.jpg using Guid(8069b7a1e4813d1408238d502059ba98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5c73f78fcc934547bc8cb50f8966291') in 0.017568 seconds 
+  Import took 0.022085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Skin_Roughness.1001.png
+  artifactKey: Guid(74699249d7957d9439da58e9dac955b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Skin_Roughness.1001.png using Guid(74699249d7957d9439da58e9dac955b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '643770d5b517234d84a18de6a77205b9') in 0.010713 seconds 
+  Import took 0.016096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Skull_Normal.1001.png
+  artifactKey: Guid(0d96cd5c83635ce47b5a30e9e4d253f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Skull_Normal.1001.png using Guid(0d96cd5c83635ce47b5a30e9e4d253f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c2f8f66bf9c0d1a7fe6042d60061eb2') in 0.017474 seconds 
+  Import took 0.024311 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Belt_Normal.1001.png
+  artifactKey: Guid(151859dc945e69e4b957f2d99ee5f5b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Belt_Normal.1001.png using Guid(151859dc945e69e4b957f2d99ee5f5b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92ae35ad9e313abc2c5badff3ae81f5c') in 0.011139 seconds 
+  Import took 0.015770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Skin_BaseColor.1001.png
+  artifactKey: Guid(6ea12c7135c04de44a23eebc006bfea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Skin_BaseColor.1001.png using Guid(6ea12c7135c04de44a23eebc006bfea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd8937c2ba8a7fb7628efe59ccbae2b0') in 0.008989 seconds 
+  Import took 0.013325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Skull_Roughness.1001.png
+  artifactKey: Guid(d374d25392fb4344d93367b7e0d3021a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Skull_Roughness.1001.png using Guid(d374d25392fb4344d93367b7e0d3021a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5dd627565d95418a1be21453eca213a') in 0.009341 seconds 
+  Import took 0.014217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Skin_Normal.1001.png
+  artifactKey: Guid(8a80cecfdf71e2444b3bd42b4dd35e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Skin_Normal.1001.png using Guid(8a80cecfdf71e2444b3bd42b4dd35e9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad056d1541784ee08c3d8eba62ff7562') in 0.010423 seconds 
+  Import took 0.015095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Belt_BaseColor.1001.png
+  artifactKey: Guid(c3a334aa43309e447a3e6ce8b736bba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Belt_BaseColor.1001.png using Guid(c3a334aa43309e447a3e6ce8b736bba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f76c8e9a64250c84756b87af81437854') in 0.011328 seconds 
+  Import took 0.015698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Belt_Height.1001.png
+  artifactKey: Guid(9e076026517542844b5c2ac58f68339a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Belt_Height.1001.png using Guid(9e076026517542844b5c2ac58f68339a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '956deffe61eb03f0bfebfe6544ba8020') in 0.010431 seconds 
+  Import took 0.014847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Skull_BaseColor.1001.png
+  artifactKey: Guid(8ffee213e2cf06946910b2a5901ffb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Skull_BaseColor.1001.png using Guid(8ffee213e2cf06946910b2a5901ffb3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd4111681a02e84870b60375adbec2a3') in 0.009603 seconds 
+  Import took 0.014358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Belt_Metallic.1001.png
+  artifactKey: Guid(d9021eb3a8e554c4aa334851efcf1ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Belt_Metallic.1001.png using Guid(d9021eb3a8e554c4aa334851efcf1ce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a835842ad4c6353a62a5c5407ae512f') in 0.009371 seconds 
+  Import took 0.015635 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000207 seconds.
-  path: Assets/Sounds/ZombieHorrorPackageFree/OGG/Foley/Foley_Crawling_A_002.ogg
-  artifactKey: Guid(c10e2328d6c3a45afa578e9ab3fdbd69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/ZombieHorrorPackageFree/OGG/Foley/Foley_Crawling_A_002.ogg using Guid(c10e2328d6c3a45afa578e9ab3fdbd69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cec91c01d1eb1210c7f69d1d0da054e2') in 0.027009 seconds 
-  Import took 0.031093 seconds .
+  path: Assets/Characters/Ver1/Enemy1_Material_Metallic.1001.png
+  artifactKey: Guid(0aef4ac7bf239d04b9da8a7a327c81e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Material_Metallic.1001.png using Guid(0aef4ac7bf239d04b9da8a7a327c81e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4b53228cbbc882d9c0fb46954875dff') in 0.008972 seconds 
+  Import took 0.013713 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.739433 seconds.
-  path: Assets/Sounds/ZombieHorrorPackageFree/MP3/Foley/Foley_Crawling_A_003.mp3
-  artifactKey: Guid(34767f6b4d2574de9a7e3e7346bd1f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/ZombieHorrorPackageFree/MP3/Foley/Foley_Crawling_A_003.mp3 using Guid(34767f6b4d2574de9a7e3e7346bd1f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008135eda3bf7182995042ef47c42c40') in 0.009295 seconds 
-  Import took 0.016907 seconds .
+  Time since last request: 0.000796 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Skin_Metallic.1001.png
+  artifactKey: Guid(db9db1782763c0140b1f78bb40bbbe5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Skin_Metallic.1001.png using Guid(db9db1782763c0140b1f78bb40bbbe5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6652141ea83a1ff038d1cb0d7c941cac') in 0.018689 seconds 
+  Import took 0.024036 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Sounds/ZombieHorrorPackageFree/OGG/Foley/Foley_Crawling_A_003.ogg
-  artifactKey: Guid(4b0049b6b5ab0406f991d6da4ebe4d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/ZombieHorrorPackageFree/OGG/Foley/Foley_Crawling_A_003.ogg using Guid(4b0049b6b5ab0406f991d6da4ebe4d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '662a99fbd0e79d7c8c5ea5396f85157b') in 0.010308 seconds 
-  Import took 0.014673 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.114503 seconds.
-  path: Assets/Sounds/ZombieHorrorPackageFree/MP3/Foley/Foley_Movement_Clothes_A_001.mp3
-  artifactKey: Guid(592ab1b970cbc428eb6e02f1644b51cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/ZombieHorrorPackageFree/MP3/Foley/Foley_Movement_Clothes_A_001.mp3 using Guid(592ab1b970cbc428eb6e02f1644b51cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2391ea7603b01ae47d080d20670d0e2') in 0.015870 seconds 
-  Import took 0.020733 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Sounds/ZombieHorrorPackageFree/OGG/Foley/Foley_Movement_Clothes_A_001.ogg
-  artifactKey: Guid(95d6c402778044a598e0c2fd3fe3cdb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sounds/ZombieHorrorPackageFree/OGG/Foley/Foley_Movement_Clothes_A_001.ogg using Guid(95d6c402778044a598e0c2fd3fe3cdb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23e29eb64d6fc8f7636e59fbac0d7e9a') in 0.012685 seconds 
-  Import took 0.017886 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.757428 seconds.
+  Time since last request: 0.000195 seconds.
   path: Assets/Characters/Ver1/Enemy1.blend
   artifactKey: Guid(dac1da7c5884137438e1011afe6f734c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver1/Enemy1.blend using Guid(dac1da7c5884137438e1011afe6f734c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9aa617b493104a4f8d76cbf3d2a2736') in 0.059832 seconds 
-  Import took 0.067122 seconds .
+Start importing Assets/Characters/Ver1/Enemy1.blend using Guid(dac1da7c5884137438e1011afe6f734c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ca4ff20dbaa428c99942ec57cab40a') in 0.269217 seconds 
+  Import took 0.275392 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 65.420845 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2.blend
-  artifactKey: Guid(2427086aa566f5f43a3a86294a6650a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2.blend using Guid(2427086aa566f5f43a3a86294a6650a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e729974dd331c4db5d1beb6fb8d66400') in 0.069533 seconds 
-  Import took 0.074776 seconds .
+  Time since last request: 0.000211 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Skull_Height.1001.png
+  artifactKey: Guid(cc889967ac15f9a4da906214eccb43ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Skull_Height.1001.png using Guid(cc889967ac15f9a4da906214eccb43ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda4e45be5ad9ee4b91e8a0340733c17') in 0.008999 seconds 
+  Import took 0.013296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Belt_Roughness.1001.png
+  artifactKey: Guid(347de6f29f712264b9c36319ef176455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Belt_Roughness.1001.png using Guid(347de6f29f712264b9c36319ef176455) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4c307abe82f7b80422247c53e3e158') in 0.010255 seconds 
+  Import took 0.014677 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000212 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Horns_Normal.1001.png
-  artifactKey: Guid(cb78f34a65a860047b0da84f7bd102c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Horns_Normal.1001.png using Guid(cb78f34a65a860047b0da84f7bd102c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa65a0279a2fa3669faa126e67482149') in 0.013967 seconds 
-  Import took 0.018670 seconds .
+  path: Assets/Characters/Ver1/Enemy1_Horns_Roughness.1001.png
+  artifactKey: Guid(12bbd025af79acb4db5f4ae835b8255b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Horns_Roughness.1001.png using Guid(12bbd025af79acb4db5f4ae835b8255b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f85bcaf2917c8dae1da903a552aa6d4') in 0.012203 seconds 
+  Import took 0.017327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Horns_BaseColor.1001.png
+  artifactKey: Guid(508a92f5333e7a74d909c826cbe22a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Horns_BaseColor.1001.png using Guid(508a92f5333e7a74d909c826cbe22a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cb42a9df4dbdeccad4b09f8c372d2e6') in 0.008715 seconds 
+  Import took 0.013185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Material_Roughness.1001.png
+  artifactKey: Guid(54f518bb07047cb41adb03b447a0d0c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Material_Roughness.1001.png using Guid(54f518bb07047cb41adb03b447a0d0c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c29911f3a6c5c16a7b719863836b84') in 0.010633 seconds 
+  Import took 0.015165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Characters/Ver1/Enemy1.fbx
+  artifactKey: Guid(54ecc0933d8ce494bba4a262d455cdfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1.fbx using Guid(54ecc0933d8ce494bba4a262d455cdfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80f20851c5da21127a975c1eda303fa') in 0.042873 seconds 
+  Import took 0.047800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Characters/Ver1/belt.mat
+  artifactKey: Guid(a48c7ef3549ac8b46ab1017c24c40999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/belt.mat using Guid(a48c7ef3549ac8b46ab1017c24c40999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ba4b186865a73557abcda7fe8a23bdb') in 0.011840 seconds 
+  Import took 0.016680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Material_Height.1001.png
+  artifactKey: Guid(a4757cee67b05bf4e956cee91e1be595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Material_Height.1001.png using Guid(a4757cee67b05bf4e956cee91e1be595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60b2655bc28b4d3e672c2623df9a7b28') in 0.008518 seconds 
+  Import took 0.013179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Skin_Height.1001.png
+  artifactKey: Guid(12bde6a20455a054395dc43d6053deaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Skin_Height.1001.png using Guid(12bde6a20455a054395dc43d6053deaa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3557654e6ea1efd4503a34560669e708') in 0.011185 seconds 
+  Import took 0.015776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Horns_Normal.1001.png
+  artifactKey: Guid(12958bd9b1784d04cb35bf3f6b8df9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Horns_Normal.1001.png using Guid(12958bd9b1784d04cb35bf3f6b8df9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b58a11e8f3d7dfd984508a06954d0e3') in 0.012361 seconds 
+  Import took 0.016859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Horns_Height.1001.png
+  artifactKey: Guid(ce82e43cdea39d143a307999c4a7bf8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Horns_Height.1001.png using Guid(ce82e43cdea39d143a307999c4a7bf8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90e833c05c22d3489bda4d06ec030fc3') in 0.010809 seconds 
+  Import took 0.015369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Skull_Metallic.1001.png
+  artifactKey: Guid(c280487ed9a1b304b9290aaf09f0ca3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Skull_Metallic.1001.png using Guid(c280487ed9a1b304b9290aaf09f0ca3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12d101e4a7c83f77e66d7b525f2c086e') in 0.008712 seconds 
+  Import took 0.013222 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Horns_Metallic.1001.png
+  artifactKey: Guid(67b2277b9a0c8b44b9c76a8a57714331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Horns_Metallic.1001.png using Guid(67b2277b9a0c8b44b9c76a8a57714331) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '535d9e324aee8885041438b8f7ce05de') in 0.015340 seconds 
+  Import took 0.019867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Material_Normal.1001.png
+  artifactKey: Guid(d4bb6fbcb5829f441aa3685c0376ce2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Material_Normal.1001.png using Guid(d4bb6fbcb5829f441aa3685c0376ce2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aec471da671b2d5d006bc035a9d880dc') in 0.012291 seconds 
+  Import took 0.017018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Characters/Ver1/Enemy1_Material_BaseColor.1001.png
+  artifactKey: Guid(333a109d5c61eab4091e8804addffe29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1_Material_BaseColor.1001.png using Guid(333a109d5c61eab4091e8804addffe29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac70264ccdf16b9386afb12f780d6c4') in 0.015097 seconds 
+  Import took 0.019916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.742937 seconds.
+  path: Assets/Characters/Ver1/Enemy1.blend
+  artifactKey: Guid(dac1da7c5884137438e1011afe6f734c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver1/Enemy1.blend using Guid(dac1da7c5884137438e1011afe6f734c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1d25a4bb46636a528c1e1ffeeb3c1c') in 0.236165 seconds 
+  Import took 0.242125 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003021 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.700 seconds
+Domain Reload Profiling:
+	ReloadAssembly (700ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (545ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (178ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (189ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (111ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2598 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.0 MB.
+System memory in use after: 142.2 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3668.
+Total: 2.623900 ms (FindLiveObjects: 0.282500 ms CreateObjectMapping: 0.087700 ms MarkObjects: 2.145600 ms  DeleteObjects: 0.106700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 110.945426 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2.blend
+  artifactKey: Guid(2427086aa566f5f43a3a86294a6650a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2.blend using Guid(2427086aa566f5f43a3a86294a6650a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '531f6d8071ae69c8c1e9a428c802ed11') in 0.121564 seconds 
+  Import took 0.126841 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000216 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Horns_Normal.1001.png
+  artifactKey: Guid(cb78f34a65a860047b0da84f7bd102c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Horns_Normal.1001.png using Guid(cb78f34a65a860047b0da84f7bd102c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bee400b1e18425f2de94c4b9a5b344f') in 0.012655 seconds 
+  Import took 0.016695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
   path: Assets/Characters/Ver2/Enemy_Ver_2_Horns_Height.1001.png
   artifactKey: Guid(acf6e99c953da1543bab8db1adf511af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Horns_Height.1001.png using Guid(acf6e99c953da1543bab8db1adf511af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71bc183501e46adf20bfd8f956b7411d') in 0.010701 seconds 
-  Import took 0.015430 seconds .
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Horns_Height.1001.png using Guid(acf6e99c953da1543bab8db1adf511af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df122165354317518acb1d96f17d5010') in 0.010291 seconds 
+  Import took 0.014514 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000208 seconds.
   path: Assets/Characters/Ver2/Enemy_Ver_2_Skull_BaseColor.1001.png
   artifactKey: Guid(b547e89fa7256d840918f6858c235137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skull_BaseColor.1001.png using Guid(b547e89fa7256d840918f6858c235137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae38d443cf97c8917ecc38af9ab70052') in 0.019862 seconds 
-  Import took 0.024406 seconds .
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skull_BaseColor.1001.png using Guid(b547e89fa7256d840918f6858c235137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ce2277bdafd31ec39ec67f6b2d7b67e') in 0.037969 seconds 
+  Import took 0.042408 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000219 seconds.
+  Time since last request: 0.000218 seconds.
   path: Assets/Characters/Ver2/Enemy_Ver_2_Horns_Metallic.1001.png
   artifactKey: Guid(d548d56b97a854a469b6d081c7ac75cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Horns_Metallic.1001.png using Guid(d548d56b97a854a469b6d081c7ac75cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c30c731cf6cabfc2d34292a57f249983') in 0.021868 seconds 
-  Import took 0.026363 seconds .
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Horns_Metallic.1001.png using Guid(d548d56b97a854a469b6d081c7ac75cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac644dafa2c3e128bd2511e501a02f56') in 0.027044 seconds 
+  Import took 0.031322 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000196 seconds.
+  Time since last request: 0.000201 seconds.
   path: Assets/Characters/Ver2/Enemy_Ver_2_Skin_Normal.1001.png
   artifactKey: Guid(7c9c35cae7406bb49aa296606fd91fdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skin_Normal.1001.png using Guid(7c9c35cae7406bb49aa296606fd91fdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eaf48b2f7768518191fbf4ee226dd77') in 0.026932 seconds 
-  Import took 0.031437 seconds .
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skin_Normal.1001.png using Guid(7c9c35cae7406bb49aa296606fd91fdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92a8508b0beb2194c16eb98c9bdc4510') in 0.017928 seconds 
+  Import took 0.021858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Skull_Normal.1001.png
+  artifactKey: Guid(16b9a2014a7a5584b9dc3d9c1c8ed226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skull_Normal.1001.png using Guid(16b9a2014a7a5584b9dc3d9c1c8ed226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cf9cb3ddfea2d26b41157c7f84f3bf5') in 0.020884 seconds 
+  Import took 0.025042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Belt_BaseColor.1001.png
+  artifactKey: Guid(e2663f667543ec94288eac4364ad2ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Belt_BaseColor.1001.png using Guid(e2663f667543ec94288eac4364ad2ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5397485840619f3c3185fa76945cc26') in 0.016677 seconds 
+  Import took 0.020518 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000239 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Skull_Normal.1001.png
-  artifactKey: Guid(16b9a2014a7a5584b9dc3d9c1c8ed226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skull_Normal.1001.png using Guid(16b9a2014a7a5584b9dc3d9c1c8ed226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd222ccc7a53af7c69fdbf7019d1c25c6') in 0.021355 seconds 
-  Import took 0.026354 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Belt_BaseColor.1001.png
-  artifactKey: Guid(e2663f667543ec94288eac4364ad2ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Belt_BaseColor.1001.png using Guid(e2663f667543ec94288eac4364ad2ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '747a78c1d8e7f9daae96c04e6630f920') in 0.015200 seconds 
-  Import took 0.019907 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000215 seconds.
   path: Assets/Characters/Ver2/Enemy_Ver_2_Skin_Metallic.1001.png
   artifactKey: Guid(e13a0cad99cc01447870ee6a5653960d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skin_Metallic.1001.png using Guid(e13a0cad99cc01447870ee6a5653960d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0e9a392182eab11686b480d85bdd2b2') in 0.020817 seconds 
-  Import took 0.025213 seconds .
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skin_Metallic.1001.png using Guid(e13a0cad99cc01447870ee6a5653960d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0195cb29d059a6e4a6c3c59cd0c7767') in 0.016069 seconds 
+  Import took 0.019935 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000208 seconds.
+  Time since last request: 0.000210 seconds.
   path: Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Roughness.1001.png
   artifactKey: Guid(c20ce5ae4f501554b85572db0dd912af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Roughness.1001.png using Guid(c20ce5ae4f501554b85572db0dd912af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d0e75b0b384569104def0240770fb7b') in 0.009758 seconds 
-  Import took 0.014403 seconds .
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Roughness.1001.png using Guid(c20ce5ae4f501554b85572db0dd912af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1d417958fad12f449764c5a0415e6b3') in 0.015035 seconds 
+  Import took 0.018917 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000185 seconds.
   path: Assets/Characters/Ver2/Enemy_Ver_2_Skin_Height.1001.png
   artifactKey: Guid(105f2cde19528a6418fc2d9c6b35f074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skin_Height.1001.png using Guid(105f2cde19528a6418fc2d9c6b35f074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8700696cd383e0a15ddadec0de5e6992') in 0.008941 seconds 
-  Import took 0.015690 seconds .
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skin_Height.1001.png using Guid(105f2cde19528a6418fc2d9c6b35f074) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2a22f6cdd1c0a02db136854ce4317b1') in 0.008207 seconds 
+  Import took 0.013103 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000207 seconds.
+  Time since last request: 0.000272 seconds.
   path: Assets/Characters/Ver2/Enemy_Ver_2_Belt_Normal.1001.png
   artifactKey: Guid(4ca2b8bc499ae5c498746c6529c61e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Belt_Normal.1001.png using Guid(4ca2b8bc499ae5c498746c6529c61e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39bbb115afd4daa2dd763ea5213c52d7') in 0.009716 seconds 
-  Import took 0.014227 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Height.1001.png
-  artifactKey: Guid(98ff02f1f2c18df4bb44f7ac8abc5955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Height.1001.png using Guid(98ff02f1f2c18df4bb44f7ac8abc5955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd8cc1e59787bb3cdbf0b14731ca744a') in 0.010971 seconds 
-  Import took 0.015404 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Horns_BaseColor.1001.png
-  artifactKey: Guid(c7dfa124942403949b7292606112a850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Horns_BaseColor.1001.png using Guid(c7dfa124942403949b7292606112a850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff30c2df0afabba39aaae8f4fc1cf736') in 0.008682 seconds 
-  Import took 0.013463 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000192 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Belt_Height.1001.png
-  artifactKey: Guid(26e3fcbf99327654690eeabeed6153ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Belt_Height.1001.png using Guid(26e3fcbf99327654690eeabeed6153ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d4ebc05e801b0bbdc917595650a2d8f') in 0.010719 seconds 
-  Import took 0.015832 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Normal.1001.png
-  artifactKey: Guid(5ed266f6de02b194aac7b850cc33986b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Normal.1001.png using Guid(5ed266f6de02b194aac7b850cc33986b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77d67dd2f27ccb097c2a69627daa7da7') in 0.009685 seconds 
-  Import took 0.014381 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Skin_BaseColor.1001.png
-  artifactKey: Guid(c935cc098836d9a49b08a4fb9722ad59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skin_BaseColor.1001.png using Guid(c935cc098836d9a49b08a4fb9722ad59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb6bbfab90e4b8806dbfcae0e9f9b358') in 0.009114 seconds 
-  Import took 0.015105 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Skirt_BaseColor.1001.png
-  artifactKey: Guid(cdbfbdefb07cf2444b35ea6e2eb8087c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skirt_BaseColor.1001.png using Guid(cdbfbdefb07cf2444b35ea6e2eb8087c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9485bd371dea24b4c62649175a0832') in 0.009915 seconds 
-  Import took 0.014686 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Skin_Roughness.1001.png
-  artifactKey: Guid(719374534d268ff4e86c2e1e6eb188aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skin_Roughness.1001.png using Guid(719374534d268ff4e86c2e1e6eb188aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83c1915c13582c48aa04cce5a07b7d8a') in 0.008887 seconds 
-  Import took 0.013522 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Skull_Metallic.1001.png
-  artifactKey: Guid(abebc9815c1a8954297a35edaa6d02e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skull_Metallic.1001.png using Guid(abebc9815c1a8954297a35edaa6d02e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1baf089e7f70e892aa7e84ff11b18f6f') in 0.010359 seconds 
-  Import took 0.014984 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Skull_Height.1001.png
-  artifactKey: Guid(da8b70297732527449761bb3a98278b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skull_Height.1001.png using Guid(da8b70297732527449761bb3a98278b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab24857920ae7f9000bb7d6563f38c2d') in 0.008654 seconds 
-  Import took 0.014285 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Belt_Metallic.1001.png
-  artifactKey: Guid(6856c7479a8899448a03dc5dc825154f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Belt_Metallic.1001.png using Guid(6856c7479a8899448a03dc5dc825154f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b775253af8626b1c0cc8eeb868767387') in 0.010390 seconds 
-  Import took 0.015751 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Horns_Roughness.1001.png
-  artifactKey: Guid(b9d205ad7355dca4da453a8cb042823f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Horns_Roughness.1001.png using Guid(b9d205ad7355dca4da453a8cb042823f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd64c9c88b5196a293f29af40d67729d7') in 0.009106 seconds 
-  Import took 0.013818 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Metallic.1001.png
-  artifactKey: Guid(59ae7895a69170e44953f63cbaa89406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Metallic.1001.png using Guid(59ae7895a69170e44953f63cbaa89406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13bc31489b789ec6d387c4e6e130e650') in 0.007950 seconds 
-  Import took 0.012600 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000218 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Belt_Roughness.1001.png
-  artifactKey: Guid(cade95ec0202f7c46b5ed708c9feb5d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Belt_Roughness.1001.png using Guid(cade95ec0202f7c46b5ed708c9feb5d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f38878315bb311a6d7fb08a9bfea2330') in 0.009972 seconds 
-  Import took 0.016029 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000199 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2_Skull_Roughness.1001.png
-  artifactKey: Guid(b66de50db11939b48a2ad4fd6eccf4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skull_Roughness.1001.png using Guid(b66de50db11939b48a2ad4fd6eccf4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24d6d17a2562f0f136998e499f397eb8') in 0.008986 seconds 
-  Import took 0.013539 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.964621 seconds.
-  path: Assets/Characters/Ver2/Enemy_Ver_2.blend
-  artifactKey: Guid(2427086aa566f5f43a3a86294a6650a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver2/Enemy_Ver_2.blend using Guid(2427086aa566f5f43a3a86294a6650a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83dbf2759e941ceb7fc9cf074a266475') in 0.045919 seconds 
-  Import took 0.051629 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.912353 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3.blend
-  artifactKey: Guid(8a1d73a6aaaef4249b16ec6cf60b61c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3.blend using Guid(8a1d73a6aaaef4249b16ec6cf60b61c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '830d379c51e601cb4edc5020aa6aa403') in 0.066466 seconds 
-  Import took 0.071775 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Belt_BaseColor.1001.png
-  artifactKey: Guid(4aa279b711fe9864096a20d9bfdb7ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Belt_BaseColor.1001.png using Guid(4aa279b711fe9864096a20d9bfdb7ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16b0b55b1b637a3983938f25e5d6e3c0') in 0.011009 seconds 
-  Import took 0.015562 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Horns_Height.1001.png
-  artifactKey: Guid(3b4f49093b7fa0f4691f307eb62c16e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Horns_Height.1001.png using Guid(3b4f49093b7fa0f4691f307eb62c16e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a6e5ec67ac77e5f4e77722453eb3b08') in 0.008721 seconds 
-  Import took 0.013373 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Horns_Metallic.1001.png
-  artifactKey: Guid(857b3afe6e752f048b83b901f4de2083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Horns_Metallic.1001.png using Guid(857b3afe6e752f048b83b901f4de2083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7fee94c529472c01ae58814207857da') in 0.025364 seconds 
-  Import took 0.030095 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Normal.1001.png
-  artifactKey: Guid(461cb8babc2bdf742bf925e8db9fa37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Normal.1001.png using Guid(461cb8babc2bdf742bf925e8db9fa37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72fc01ce2f53f8ef18dc4a59def9fadc') in 0.034471 seconds 
-  Import took 0.038971 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Belt_Metallic.1001.png
-  artifactKey: Guid(e808e0fd2bc8d6d4cbbea92ce15de3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Belt_Metallic.1001.png using Guid(e808e0fd2bc8d6d4cbbea92ce15de3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd32c331baebb33ecfbf6c0fc0d66a1fc') in 0.025738 seconds 
-  Import took 0.030102 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Height.1001.png
-  artifactKey: Guid(1b4a2c318a3c0d14381db280307f1a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Height.1001.png using Guid(1b4a2c318a3c0d14381db280307f1a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a259aa3298bc794dfcd510e7e69340') in 0.009002 seconds 
-  Import took 0.013699 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Metallic.1001.png
-  artifactKey: Guid(9e808fd9eec70ec46869426779933bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Metallic.1001.png using Guid(9e808fd9eec70ec46869426779933bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87c50a30bbf6044530a2a0b7edb2174b') in 0.008429 seconds 
-  Import took 0.013032 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skull_Metallic.1001.png
-  artifactKey: Guid(62df08f8110ab7c45911a7a71a2bf179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skull_Metallic.1001.png using Guid(62df08f8110ab7c45911a7a71a2bf179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d67e870d301b4de1feed6ee0a29ad2') in 0.009442 seconds 
-  Import took 0.015396 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Belt_Normal.1001.png
-  artifactKey: Guid(7e30f69f90c0f994eb896ee6068aad9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Belt_Normal.1001.png using Guid(7e30f69f90c0f994eb896ee6068aad9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc5ec6330e548a5c4d254b0f66f71c5') in 0.009021 seconds 
-  Import took 0.013707 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skull_Height.1001.png
-  artifactKey: Guid(d3bc47b85a5c0ea4dbe354f625bba950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skull_Height.1001.png using Guid(d3bc47b85a5c0ea4dbe354f625bba950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf12758999c58d095edc32f5a34a07e1') in 0.010227 seconds 
-  Import took 0.014861 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000221 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Roughness.1001.png
-  artifactKey: Guid(9af5de8aaa8eeef4da5ed2d385d92c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Roughness.1001.png using Guid(9af5de8aaa8eeef4da5ed2d385d92c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24432da9018d0e4ee9c233936a157a79') in 0.009462 seconds 
-  Import took 0.014269 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skin_Height.1001.png
-  artifactKey: Guid(c1ad8c3b2437fcd4eb63cb73c979bf7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skin_Height.1001.png using Guid(c1ad8c3b2437fcd4eb63cb73c979bf7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828cc37e6b6fedfea3fc574a3c174bd1') in 0.007881 seconds 
-  Import took 0.012866 seconds .
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Belt_Normal.1001.png using Guid(4ca2b8bc499ae5c498746c6529c61e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa3217effb2586e2f79c8762b5a21f73') in 0.013243 seconds 
+  Import took 0.017972 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000212 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Horns_Normal.1001.png
-  artifactKey: Guid(150845ea83adb1343b2e98f45b018dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Horns_Normal.1001.png using Guid(150845ea83adb1343b2e98f45b018dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '103d9895091c2b45a051f8be4f28ca2f') in 0.010691 seconds 
-  Import took 0.015448 seconds .
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Height.1001.png
+  artifactKey: Guid(98ff02f1f2c18df4bb44f7ac8abc5955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Height.1001.png using Guid(98ff02f1f2c18df4bb44f7ac8abc5955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d84a7651f8b551bd71ce5f99574041c') in 0.011376 seconds 
+  Import took 0.016057 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000246 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Belt_Roughness.1001.png
-  artifactKey: Guid(7835d8a132f8771479e350c637fd10c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Belt_Roughness.1001.png using Guid(7835d8a132f8771479e350c637fd10c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2231258bc16e334c572f4c4649014e5') in 0.009034 seconds 
-  Import took 0.013948 seconds .
+  Time since last request: 0.000223 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Horns_BaseColor.1001.png
+  artifactKey: Guid(c7dfa124942403949b7292606112a850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Horns_BaseColor.1001.png using Guid(c7dfa124942403949b7292606112a850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5195e35f2ca05977670a28e69a2ed446') in 0.014703 seconds 
+  Import took 0.019536 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000194 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Belt_Height.1001.png
-  artifactKey: Guid(8177da20dd65b6b46840998bcfb99044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Belt_Height.1001.png using Guid(8177da20dd65b6b46840998bcfb99044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1a12ae88c664dc7cb16d77d0512fa79') in 0.008958 seconds 
-  Import took 0.015985 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000214 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3.obj
-  artifactKey: Guid(a3623389dac77734abe512a3272ca266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3.obj using Guid(a3623389dac77734abe512a3272ca266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54a0fa132bc73b0dfe45d8f3ffb25406') in 0.055821 seconds 
-  Import took 0.060718 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skin_Normal.1001.png
-  artifactKey: Guid(4a851233e5a54bb4d9398a65fd743de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skin_Normal.1001.png using Guid(4a851233e5a54bb4d9398a65fd743de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7997eb07501e2463a116f696ce79b192') in 0.010445 seconds 
-  Import took 0.015108 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000202 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Horns_BaseColor.1001.png
-  artifactKey: Guid(520159217a0215341a290576f4c5e4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Horns_BaseColor.1001.png using Guid(520159217a0215341a290576f4c5e4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c54c6f591be4d96568dacad419549982') in 0.009270 seconds 
-  Import took 0.013708 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skirt_BaseColor.1001.png
-  artifactKey: Guid(068b5081485104441ab9ca0cb912da9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skirt_BaseColor.1001.png using Guid(068b5081485104441ab9ca0cb912da9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9974b660056677d8287de6195d88b9c6') in 0.008869 seconds 
-  Import took 0.013333 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skull_Roughness.1001.png
-  artifactKey: Guid(e0c8e00da302055488238e5ffe02081d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skull_Roughness.1001.png using Guid(e0c8e00da302055488238e5ffe02081d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052e09d0e80a6274315a2e77b85ad7a7') in 0.011859 seconds 
-  Import took 0.016359 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Horns_Roughness.1001.png
-  artifactKey: Guid(95e8942641aada7409b6908c8c8c5b59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Horns_Roughness.1001.png using Guid(95e8942641aada7409b6908c8c8c5b59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef9f1e58501c24d63092cce09bc5ceb') in 0.009236 seconds 
-  Import took 0.013851 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000388 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skin_BaseColor.1001.png
-  artifactKey: Guid(de79e56fc35b4324190ebac503be10f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skin_BaseColor.1001.png using Guid(de79e56fc35b4324190ebac503be10f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c476fab7a8afb5c61aa5b0ae663d243f') in 0.010754 seconds 
-  Import took 0.015524 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skull_BaseColor.1001.png
-  artifactKey: Guid(b79c356dcabf1ae4da33db2942f495c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skull_BaseColor.1001.png using Guid(b79c356dcabf1ae4da33db2942f495c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d911a50249e06a93610c01b18da4b5a') in 0.009057 seconds 
-  Import took 0.013674 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skull_Normal.1001.png
-  artifactKey: Guid(32863b6792439c34fbdd0e4d96c81f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skull_Normal.1001.png using Guid(32863b6792439c34fbdd0e4d96c81f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '946c92ce30813a2f9917ce73fdf1fe97') in 0.008710 seconds 
-  Import took 0.014830 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skin_Metallic.1001.png
-  artifactKey: Guid(f24ab32ba51622d4eac3b96c8870b241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skin_Metallic.1001.png using Guid(f24ab32ba51622d4eac3b96c8870b241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1459825cffb6ab956a34f5d9d2aed39d') in 0.008637 seconds 
-  Import took 0.013343 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3_Skin_Roughness.1001.png
-  artifactKey: Guid(e6f69453f6771a74780b504f1dfd36ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skin_Roughness.1001.png using Guid(e6f69453f6771a74780b504f1dfd36ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eac7a1fd3fed14fecf41bbfa8fcd158e') in 0.008941 seconds 
-  Import took 0.013495 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.641205 seconds.
-  path: Assets/Characters/Ver3/Enemy_Ver_3.blend
-  artifactKey: Guid(8a1d73a6aaaef4249b16ec6cf60b61c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver3/Enemy_Ver_3.blend using Guid(8a1d73a6aaaef4249b16ec6cf60b61c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a56a7365e101d5ddb00e53212929df4e') in 0.059872 seconds 
-  Import took 0.065070 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.411362 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4.blend
-  artifactKey: Guid(12d013ddc0f145a49a6793da4f861055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4.blend using Guid(12d013ddc0f145a49a6793da4f861055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '498ad8b518eeac3cce873609dfe1bf2f') in 0.060309 seconds 
-  Import took 0.065734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skull_Metallic.1001.png
-  artifactKey: Guid(eb28ed0333fc5454ab15af88e1d93d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skull_Metallic.1001.png using Guid(eb28ed0333fc5454ab15af88e1d93d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce72338036cf0a7ca733835e52d5dd38') in 0.016240 seconds 
-  Import took 0.020980 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Metallic.1001.png
-  artifactKey: Guid(20330e1632be045488ae4fad811d81d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Metallic.1001.png using Guid(20330e1632be045488ae4fad811d81d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c04d2b8675982c373c0d55fd1836760') in 0.026499 seconds 
-  Import took 0.031068 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Horns_Height.1001.png
-  artifactKey: Guid(e9fd08e378f799a4aa9118cfe84536f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Horns_Height.1001.png using Guid(e9fd08e378f799a4aa9118cfe84536f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77afb072342d5e9501d9be0899dd5bc2') in 0.012453 seconds 
-  Import took 0.017078 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skull_Normal.1001.png
-  artifactKey: Guid(a723de294657c74408fa26a69a90a625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skull_Normal.1001.png using Guid(a723de294657c74408fa26a69a90a625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1432481fbad59b2a7fd5dc49b231754d') in 0.027743 seconds 
-  Import took 0.032274 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000196 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Horns_Metallic.1001.png
-  artifactKey: Guid(a9ec819c4f83d1643be18d7f21f934e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Horns_Metallic.1001.png using Guid(a9ec819c4f83d1643be18d7f21f934e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '568ca30d8e33c87c7c98cb9900b65570') in 0.013483 seconds 
-  Import took 0.017844 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skin_Height.1001.png
-  artifactKey: Guid(15465a9e4cb48104eb2d35044b595d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skin_Height.1001.png using Guid(15465a9e4cb48104eb2d35044b595d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab0c98dc41be457d5ec9f0e282034d34') in 0.008797 seconds 
-  Import took 0.013814 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000171 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Belt_Height.1001.png
-  artifactKey: Guid(9c3c9105ae4bd5340a4e777278474e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Belt_Height.1001.png using Guid(9c3c9105ae4bd5340a4e777278474e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9113dc9943aa6942a78484412fcbb0b0') in 0.009176 seconds 
-  Import took 0.014683 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000398 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Horns_Roughness.1001.png
-  artifactKey: Guid(eca0f712c06ca4d458f134c812ae687e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Horns_Roughness.1001.png using Guid(eca0f712c06ca4d458f134c812ae687e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7edf93bb7160339d0ccca9340315f741') in 0.009131 seconds 
-  Import took 0.013757 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000393 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Belt_Roughness.1001.png
-  artifactKey: Guid(7e8eb80e5e3c2b84a8eb53b9373126c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Belt_Roughness.1001.png using Guid(7e8eb80e5e3c2b84a8eb53b9373126c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55317372ab0975194ea7a9e27489162e') in 0.009353 seconds 
-  Import took 0.014389 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000205 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Height.1001.png
-  artifactKey: Guid(4b07221813360d643ba083d01f7ac232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Height.1001.png using Guid(4b07221813360d643ba083d01f7ac232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11cdc9121f36b278fd0e5c7d1f179dad') in 0.010573 seconds 
-  Import took 0.015384 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skin_Metallic.1001.png
-  artifactKey: Guid(43a95fe90e5246b4590d5e9ac9d3b7ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skin_Metallic.1001.png using Guid(43a95fe90e5246b4590d5e9ac9d3b7ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '999d11cd8386bda544047e6f9191f1c1') in 0.008565 seconds 
-  Import took 0.013148 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000191 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Horns_BaseColor.1001.png
-  artifactKey: Guid(b15483f01436c1c47aba7ef6964d89aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Horns_BaseColor.1001.png using Guid(b15483f01436c1c47aba7ef6964d89aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9431799df3ebbcf65d457163905e225a') in 0.008925 seconds 
-  Import took 0.013624 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000204 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skin_BaseColor.1001.png
-  artifactKey: Guid(afcb1073f62fb2843b2c102f7cef80eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skin_BaseColor.1001.png using Guid(afcb1073f62fb2843b2c102f7cef80eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08d7d5b9f760fc403dabc1484cc1c597') in 0.010909 seconds 
-  Import took 0.016170 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Horns_Normal.1001.png
-  artifactKey: Guid(790d34d08a7d3c044b1302c9533b4784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Horns_Normal.1001.png using Guid(790d34d08a7d3c044b1302c9533b4784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f44e492ce69faed42930212fb85b92') in 0.008909 seconds 
-  Import took 0.013734 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skull_Roughness.1001.png
-  artifactKey: Guid(fb0abbe311d7cf447ad2fb7cb4edf4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skull_Roughness.1001.png using Guid(fb0abbe311d7cf447ad2fb7cb4edf4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d5055fa809a1134441b25a1464a09ea') in 0.009370 seconds 
-  Import took 0.015865 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000225 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Belt_BaseColor.1001.png
-  artifactKey: Guid(13a1aa3e7d804694d9d52bdbd297a063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Belt_BaseColor.1001.png using Guid(13a1aa3e7d804694d9d52bdbd297a063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f226e4afb75eb2cab454dae671fcdfb') in 0.009224 seconds 
-  Import took 0.014104 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000189 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skin_Roughness.1001.png
-  artifactKey: Guid(7e3d743497f3b1a42a771ea5f058fb7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skin_Roughness.1001.png using Guid(7e3d743497f3b1a42a771ea5f058fb7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a96b996d86ccfaa4eede7d7b9c915a') in 0.009405 seconds 
-  Import took 0.014262 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skull_Height.1001.png
-  artifactKey: Guid(17fc245f5bfc8af41ba6d88f48f1f138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skull_Height.1001.png using Guid(17fc245f5bfc8af41ba6d88f48f1f138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00802c9ae2a2336c1a6e0752d8ae8a26') in 0.010414 seconds 
-  Import took 0.015050 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000209 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Belt_Normal.1001.png
-  artifactKey: Guid(0e587bc9512eeed4d8ac362ae3473056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Belt_Normal.1001.png using Guid(0e587bc9512eeed4d8ac362ae3473056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c72598b034222b2edf28df50f52cf35f') in 0.009848 seconds 
-  Import took 0.014556 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skin_Normal.1001.png
-  artifactKey: Guid(478b181062f5d4d48aff4a1fcec95b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skin_Normal.1001.png using Guid(478b181062f5d4d48aff4a1fcec95b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6333a0a96bbe15d86cc1e8d6c8de87ca') in 0.008796 seconds 
-  Import took 0.013339 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000224 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skirt_BaseColor.1001.png
-  artifactKey: Guid(5c3fd6738a2f32a4d8ba1574b0e66850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skirt_BaseColor.1001.png using Guid(5c3fd6738a2f32a4d8ba1574b0e66850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6b3b2b03a060237454b3d83d7dba721') in 0.009450 seconds 
-  Import took 0.015699 seconds .
+  Time since last request: 0.000343 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Belt_Height.1001.png
+  artifactKey: Guid(26e3fcbf99327654690eeabeed6153ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Belt_Height.1001.png using Guid(26e3fcbf99327654690eeabeed6153ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c307fd986cb137fe18bce948d0ade701') in 0.008987 seconds 
+  Import took 0.013647 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000207 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Belt_Metallic.1001.png
-  artifactKey: Guid(7ca6fbe9c09831c48ba4bf2f8cafeb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Belt_Metallic.1001.png using Guid(7ca6fbe9c09831c48ba4bf2f8cafeb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd024a73a9443127acf4f0e404e41eb57') in 0.008400 seconds 
-  Import took 0.013114 seconds .
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Normal.1001.png
+  artifactKey: Guid(5ed266f6de02b194aac7b850cc33986b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Normal.1001.png using Guid(5ed266f6de02b194aac7b850cc33986b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2feb16106a8c8e3a68612bc192580628') in 0.008866 seconds 
+  Import took 0.013356 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000188 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skull_BaseColor.1001.png
-  artifactKey: Guid(3625bf782c2910f40b4a71dcb63e59e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skull_BaseColor.1001.png using Guid(3625bf782c2910f40b4a71dcb63e59e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dde307aadc7afdf9f25d37ef541a9c7e') in 0.011532 seconds 
-  Import took 0.017755 seconds .
+  Time since last request: 0.000202 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Skin_BaseColor.1001.png
+  artifactKey: Guid(c935cc098836d9a49b08a4fb9722ad59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skin_BaseColor.1001.png using Guid(c935cc098836d9a49b08a4fb9722ad59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e101c9d6ab13207e0f79c1947679cc06') in 0.009731 seconds 
+  Import took 0.014140 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000229 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Normal.1001.png
-  artifactKey: Guid(7843e66c183786d4ba6889ebafe6ef22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Normal.1001.png using Guid(7843e66c183786d4ba6889ebafe6ef22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7c34cd9feb8fa1d0a12e943066b6b96') in 0.010366 seconds 
-  Import took 0.015187 seconds .
+  Time since last request: 0.000257 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Skirt_BaseColor.1001.png
+  artifactKey: Guid(cdbfbdefb07cf2444b35ea6e2eb8087c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skirt_BaseColor.1001.png using Guid(cdbfbdefb07cf2444b35ea6e2eb8087c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '086d0967cfb993acdf247987bd4f8052') in 0.011626 seconds 
+  Import took 0.016672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Skin_Roughness.1001.png
+  artifactKey: Guid(719374534d268ff4e86c2e1e6eb188aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skin_Roughness.1001.png using Guid(719374534d268ff4e86c2e1e6eb188aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48e4482ee6b304f49f9a49b81103e0e9') in 0.011123 seconds 
+  Import took 0.015699 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000199 seconds.
-  path: Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Roughness.1001.png
-  artifactKey: Guid(0fdd0aba26a1f0c43a19222cbed2f2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Roughness.1001.png using Guid(0fdd0aba26a1f0c43a19222cbed2f2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '887e4525864e4e39628341fdc7af1405') in 0.009014 seconds 
-  Import took 0.013592 seconds .
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Skull_Metallic.1001.png
+  artifactKey: Guid(abebc9815c1a8954297a35edaa6d02e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skull_Metallic.1001.png using Guid(abebc9815c1a8954297a35edaa6d02e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7752a7d8993088ee5aecc5859c27026c') in 0.008680 seconds 
+  Import took 0.013211 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.333003 seconds.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Skull_Height.1001.png
+  artifactKey: Guid(da8b70297732527449761bb3a98278b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skull_Height.1001.png using Guid(da8b70297732527449761bb3a98278b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80a677c9f158b768d43c2b5754fa9ec5') in 0.013097 seconds 
+  Import took 0.017705 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000584 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Belt_Metallic.1001.png
+  artifactKey: Guid(6856c7479a8899448a03dc5dc825154f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Belt_Metallic.1001.png using Guid(6856c7479a8899448a03dc5dc825154f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f585a116f3f75197be23c57f889953') in 0.008659 seconds 
+  Import took 0.013910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Horns_Roughness.1001.png
+  artifactKey: Guid(b9d205ad7355dca4da453a8cb042823f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Horns_Roughness.1001.png using Guid(b9d205ad7355dca4da453a8cb042823f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b397c2c62c29ba131592776ecf6bccfe') in 0.011893 seconds 
+  Import took 0.016196 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Metallic.1001.png
+  artifactKey: Guid(59ae7895a69170e44953f63cbaa89406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skirt_Metallic.1001.png using Guid(59ae7895a69170e44953f63cbaa89406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72e3dfce453f355b639b95cfa6ed4d18') in 0.012741 seconds 
+  Import took 0.018191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Belt_Roughness.1001.png
+  artifactKey: Guid(cade95ec0202f7c46b5ed708c9feb5d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Belt_Roughness.1001.png using Guid(cade95ec0202f7c46b5ed708c9feb5d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e318a89046831232548be0f144b25b5d') in 0.009111 seconds 
+  Import took 0.013456 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2_Skull_Roughness.1001.png
+  artifactKey: Guid(b66de50db11939b48a2ad4fd6eccf4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2_Skull_Roughness.1001.png using Guid(b66de50db11939b48a2ad4fd6eccf4de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02407b8dbf22f38311e1bb8b7380596b') in 0.009392 seconds 
+  Import took 0.013744 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003451 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.698 seconds
+Domain Reload Profiling:
+	ReloadAssembly (699ms)
+		BeginReloadAssembly (102ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (547ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (181ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (177ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (59ms)
+				ProcessInitializeOnLoadAttributes (104ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2598 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.1 MB.
+System memory in use after: 142.3 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3673.
+Total: 2.670300 ms (FindLiveObjects: 0.265800 ms CreateObjectMapping: 0.075400 ms MarkObjects: 2.257200 ms  DeleteObjects: 0.070900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 9.694285 seconds.
+  path: Assets/Characters/Ver2/Enemy_Ver_2.blend
+  artifactKey: Guid(2427086aa566f5f43a3a86294a6650a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver2/Enemy_Ver_2.blend using Guid(2427086aa566f5f43a3a86294a6650a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aad7df408c6a3e0979dc6ab704f26940') in 0.114564 seconds 
+  Import took 0.119570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.192810 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3.blend
+  artifactKey: Guid(8a1d73a6aaaef4249b16ec6cf60b61c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3.blend using Guid(8a1d73a6aaaef4249b16ec6cf60b61c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ca9f0b906d27d73f55f3289f4c1e06') in 0.059013 seconds 
+  Import took 0.064008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Belt_BaseColor.1001.png
+  artifactKey: Guid(4aa279b711fe9864096a20d9bfdb7ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Belt_BaseColor.1001.png using Guid(4aa279b711fe9864096a20d9bfdb7ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc31cb6fcd6b0b8a71911ca648f43702') in 0.021205 seconds 
+  Import took 0.025440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000422 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Horns_Height.1001.png
+  artifactKey: Guid(3b4f49093b7fa0f4691f307eb62c16e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Horns_Height.1001.png using Guid(3b4f49093b7fa0f4691f307eb62c16e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07bb5d95b6a40bf02bc286af8702dd7d') in 0.038773 seconds 
+  Import took 0.045897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Horns_Metallic.1001.png
+  artifactKey: Guid(857b3afe6e752f048b83b901f4de2083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Horns_Metallic.1001.png using Guid(857b3afe6e752f048b83b901f4de2083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4d1a8728731c79cf9c66487bfd4f95') in 0.013522 seconds 
+  Import took 0.017800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Normal.1001.png
+  artifactKey: Guid(461cb8babc2bdf742bf925e8db9fa37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Normal.1001.png using Guid(461cb8babc2bdf742bf925e8db9fa37b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d42e303839321babf432f6a5dfac288') in 0.056662 seconds 
+  Import took 0.060693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Belt_Metallic.1001.png
+  artifactKey: Guid(e808e0fd2bc8d6d4cbbea92ce15de3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Belt_Metallic.1001.png using Guid(e808e0fd2bc8d6d4cbbea92ce15de3e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1a91efb43b80a6e9ed22523cf891916') in 0.021496 seconds 
+  Import took 0.026114 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Height.1001.png
+  artifactKey: Guid(1b4a2c318a3c0d14381db280307f1a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Height.1001.png using Guid(1b4a2c318a3c0d14381db280307f1a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5788bc2b3d5c9aaab6aee9c2a495f490') in 0.015554 seconds 
+  Import took 0.019686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Metallic.1001.png
+  artifactKey: Guid(9e808fd9eec70ec46869426779933bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Metallic.1001.png using Guid(9e808fd9eec70ec46869426779933bc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bdc1d3b8fa364cb64f742991413833c') in 0.023339 seconds 
+  Import took 0.027519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skull_Metallic.1001.png
+  artifactKey: Guid(62df08f8110ab7c45911a7a71a2bf179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skull_Metallic.1001.png using Guid(62df08f8110ab7c45911a7a71a2bf179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cf4949b15a85992477a45b1f79adf11') in 0.013459 seconds 
+  Import took 0.017703 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Belt_Normal.1001.png
+  artifactKey: Guid(7e30f69f90c0f994eb896ee6068aad9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Belt_Normal.1001.png using Guid(7e30f69f90c0f994eb896ee6068aad9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1a02ad51ed0cc46170b48b1679174c6') in 0.008947 seconds 
+  Import took 0.013418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000254 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skull_Height.1001.png
+  artifactKey: Guid(d3bc47b85a5c0ea4dbe354f625bba950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skull_Height.1001.png using Guid(d3bc47b85a5c0ea4dbe354f625bba950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a72430e148244d7c3ee93edf7f6b31') in 0.013706 seconds 
+  Import took 0.018414 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Roughness.1001.png
+  artifactKey: Guid(9af5de8aaa8eeef4da5ed2d385d92c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skirt_Roughness.1001.png using Guid(9af5de8aaa8eeef4da5ed2d385d92c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e440638d09963839e474b87584d5d911') in 0.008707 seconds 
+  Import took 0.014960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skin_Height.1001.png
+  artifactKey: Guid(c1ad8c3b2437fcd4eb63cb73c979bf7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skin_Height.1001.png using Guid(c1ad8c3b2437fcd4eb63cb73c979bf7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e51a21fa4a3de052959389f7dcf534f9') in 0.008960 seconds 
+  Import took 0.014476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Horns_Normal.1001.png
+  artifactKey: Guid(150845ea83adb1343b2e98f45b018dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Horns_Normal.1001.png using Guid(150845ea83adb1343b2e98f45b018dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '891e3624fd14528a1253119f0672f329') in 0.008985 seconds 
+  Import took 0.013423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Belt_Roughness.1001.png
+  artifactKey: Guid(7835d8a132f8771479e350c637fd10c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Belt_Roughness.1001.png using Guid(7835d8a132f8771479e350c637fd10c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b27d8a9cf5c9859aeef055745d2a62d') in 0.009000 seconds 
+  Import took 0.013518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Belt_Height.1001.png
+  artifactKey: Guid(8177da20dd65b6b46840998bcfb99044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Belt_Height.1001.png using Guid(8177da20dd65b6b46840998bcfb99044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '030632193fd7e3a63215c5207771ae67') in 0.016636 seconds 
+  Import took 0.021313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000222 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3.obj
+  artifactKey: Guid(a3623389dac77734abe512a3272ca266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3.obj using Guid(a3623389dac77734abe512a3272ca266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd52853cafcf25578ca631e4d03759a7') in 0.050169 seconds 
+  Import took 0.054997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skin_Normal.1001.png
+  artifactKey: Guid(4a851233e5a54bb4d9398a65fd743de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skin_Normal.1001.png using Guid(4a851233e5a54bb4d9398a65fd743de6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b2e9f266d3179c844eb312bec3df5c') in 0.015553 seconds 
+  Import took 0.019936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Horns_BaseColor.1001.png
+  artifactKey: Guid(520159217a0215341a290576f4c5e4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Horns_BaseColor.1001.png using Guid(520159217a0215341a290576f4c5e4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e8540ff740065776a6f0b19be3ccf8') in 0.009002 seconds 
+  Import took 0.015762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skirt_BaseColor.1001.png
+  artifactKey: Guid(068b5081485104441ab9ca0cb912da9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skirt_BaseColor.1001.png using Guid(068b5081485104441ab9ca0cb912da9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02780f82397d56a1a41eaf7b095dbcbe') in 0.016161 seconds 
+  Import took 0.020629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skull_Roughness.1001.png
+  artifactKey: Guid(e0c8e00da302055488238e5ffe02081d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skull_Roughness.1001.png using Guid(e0c8e00da302055488238e5ffe02081d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0283e18510429c520c7e1c0d2c8300b5') in 0.008668 seconds 
+  Import took 0.013226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Horns_Roughness.1001.png
+  artifactKey: Guid(95e8942641aada7409b6908c8c8c5b59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Horns_Roughness.1001.png using Guid(95e8942641aada7409b6908c8c8c5b59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70fc7d80c9a27a4efda4bfab892098af') in 0.020079 seconds 
+  Import took 0.024592 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skin_BaseColor.1001.png
+  artifactKey: Guid(de79e56fc35b4324190ebac503be10f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skin_BaseColor.1001.png using Guid(de79e56fc35b4324190ebac503be10f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b91bf483bd48700e8250ccc69ed826') in 0.012000 seconds 
+  Import took 0.016675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skull_BaseColor.1001.png
+  artifactKey: Guid(b79c356dcabf1ae4da33db2942f495c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skull_BaseColor.1001.png using Guid(b79c356dcabf1ae4da33db2942f495c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2bd6e2c2d53447af58a36041beb6e3a') in 0.013393 seconds 
+  Import took 0.017775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skull_Normal.1001.png
+  artifactKey: Guid(32863b6792439c34fbdd0e4d96c81f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skull_Normal.1001.png using Guid(32863b6792439c34fbdd0e4d96c81f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7f372a2c25daa71089df1884acbdebf') in 0.008103 seconds 
+  Import took 0.012850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skin_Metallic.1001.png
+  artifactKey: Guid(f24ab32ba51622d4eac3b96c8870b241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skin_Metallic.1001.png using Guid(f24ab32ba51622d4eac3b96c8870b241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e50b81ce1763a4d6852056810c7a9fb') in 0.008407 seconds 
+  Import took 0.012983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3_Skin_Roughness.1001.png
+  artifactKey: Guid(e6f69453f6771a74780b504f1dfd36ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3_Skin_Roughness.1001.png using Guid(e6f69453f6771a74780b504f1dfd36ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a7ab70e48bf2eba71e92de45ca61fee') in 0.009902 seconds 
+  Import took 0.014384 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003173 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.691 seconds
+Domain Reload Profiling:
+	ReloadAssembly (692ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (530ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (171ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (177ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (105ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2598 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.3 MB.
+System memory in use after: 142.4 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3678.
+Total: 2.575700 ms (FindLiveObjects: 0.268200 ms CreateObjectMapping: 0.086900 ms MarkObjects: 2.144700 ms  DeleteObjects: 0.075100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 9.120234 seconds.
+  path: Assets/Characters/Ver3/Enemy_Ver_3.blend
+  artifactKey: Guid(8a1d73a6aaaef4249b16ec6cf60b61c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver3/Enemy_Ver_3.blend using Guid(8a1d73a6aaaef4249b16ec6cf60b61c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c231ecce02892c68bdba8c436f8418f2') in 0.115718 seconds 
+  Import took 0.120458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.116238 seconds.
   path: Assets/Characters/Ver4/Enemy_Ver_4.blend
   artifactKey: Guid(12d013ddc0f145a49a6793da4f861055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Ver4/Enemy_Ver_4.blend using Guid(12d013ddc0f145a49a6793da4f861055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ef8c003f3d935a68208d087f8a1f12') in 0.046936 seconds 
-  Import took 0.052155 seconds .
+Start importing Assets/Characters/Ver4/Enemy_Ver_4.blend using Guid(12d013ddc0f145a49a6793da4f861055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbeaf94dc8881884f1ddf367ef999c73') in 0.090534 seconds 
+  Import took 0.095566 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skull_Metallic.1001.png
+  artifactKey: Guid(eb28ed0333fc5454ab15af88e1d93d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skull_Metallic.1001.png using Guid(eb28ed0333fc5454ab15af88e1d93d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf64a0453e68cc8c4d5048d83b01a07') in 0.011805 seconds 
+  Import took 0.015761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Metallic.1001.png
+  artifactKey: Guid(20330e1632be045488ae4fad811d81d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Metallic.1001.png using Guid(20330e1632be045488ae4fad811d81d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4d054605ea098ebadb999ebdc7df109') in 0.016048 seconds 
+  Import took 0.020465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Horns_Height.1001.png
+  artifactKey: Guid(e9fd08e378f799a4aa9118cfe84536f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Horns_Height.1001.png using Guid(e9fd08e378f799a4aa9118cfe84536f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ba4f19620224d892d6ce7918b0a1833') in 0.017705 seconds 
+  Import took 0.022699 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skull_Normal.1001.png
+  artifactKey: Guid(a723de294657c74408fa26a69a90a625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skull_Normal.1001.png using Guid(a723de294657c74408fa26a69a90a625) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81313a44cfe647f448e7fddec2b0776a') in 0.049030 seconds 
+  Import took 0.053741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Horns_Metallic.1001.png
+  artifactKey: Guid(a9ec819c4f83d1643be18d7f21f934e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Horns_Metallic.1001.png using Guid(a9ec819c4f83d1643be18d7f21f934e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3624d2d5f408258857f17dd0da49dbd') in 0.018025 seconds 
+  Import took 0.022305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skin_Height.1001.png
+  artifactKey: Guid(15465a9e4cb48104eb2d35044b595d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skin_Height.1001.png using Guid(15465a9e4cb48104eb2d35044b595d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '609e95f7366c473143f6816b63ee0ab5') in 0.021330 seconds 
+  Import took 0.025466 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Belt_Height.1001.png
+  artifactKey: Guid(9c3c9105ae4bd5340a4e777278474e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Belt_Height.1001.png using Guid(9c3c9105ae4bd5340a4e777278474e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d56c23818b70f4a28ab00f059e42a82') in 0.017139 seconds 
+  Import took 0.021010 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Horns_Roughness.1001.png
+  artifactKey: Guid(eca0f712c06ca4d458f134c812ae687e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Horns_Roughness.1001.png using Guid(eca0f712c06ca4d458f134c812ae687e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fee0407610095571c80eeeaaa7bd916') in 0.011733 seconds 
+  Import took 0.015646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Belt_Roughness.1001.png
+  artifactKey: Guid(7e8eb80e5e3c2b84a8eb53b9373126c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Belt_Roughness.1001.png using Guid(7e8eb80e5e3c2b84a8eb53b9373126c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b48960436b87f010bbabec72ba9dadf') in 0.008956 seconds 
+  Import took 0.013377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Height.1001.png
+  artifactKey: Guid(4b07221813360d643ba083d01f7ac232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Height.1001.png using Guid(4b07221813360d643ba083d01f7ac232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e66d12a476e7df4df224e9b25860916') in 0.014893 seconds 
+  Import took 0.019519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skin_Metallic.1001.png
+  artifactKey: Guid(43a95fe90e5246b4590d5e9ac9d3b7ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skin_Metallic.1001.png using Guid(43a95fe90e5246b4590d5e9ac9d3b7ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5278f85da84c88ab7391f8f790e8d822') in 0.008106 seconds 
+  Import took 0.014190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Horns_BaseColor.1001.png
+  artifactKey: Guid(b15483f01436c1c47aba7ef6964d89aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Horns_BaseColor.1001.png using Guid(b15483f01436c1c47aba7ef6964d89aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e699ea3927a964f4ae7b4d88e9db5650') in 0.009288 seconds 
+  Import took 0.013921 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skin_BaseColor.1001.png
+  artifactKey: Guid(afcb1073f62fb2843b2c102f7cef80eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skin_BaseColor.1001.png using Guid(afcb1073f62fb2843b2c102f7cef80eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94cca9aa91dd35857fac3d49e33a80e6') in 0.008629 seconds 
+  Import took 0.013149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Horns_Normal.1001.png
+  artifactKey: Guid(790d34d08a7d3c044b1302c9533b4784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Horns_Normal.1001.png using Guid(790d34d08a7d3c044b1302c9533b4784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '326db88acbf7835763f8034f9d230586') in 0.008571 seconds 
+  Import took 0.013012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skull_Roughness.1001.png
+  artifactKey: Guid(fb0abbe311d7cf447ad2fb7cb4edf4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skull_Roughness.1001.png using Guid(fb0abbe311d7cf447ad2fb7cb4edf4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '352f94837ae3ee95cc22be7f398bda83') in 0.009114 seconds 
+  Import took 0.014087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Belt_BaseColor.1001.png
+  artifactKey: Guid(13a1aa3e7d804694d9d52bdbd297a063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Belt_BaseColor.1001.png using Guid(13a1aa3e7d804694d9d52bdbd297a063) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c04bdcbe48fecbb29c940de25f38437') in 0.010375 seconds 
+  Import took 0.014909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skin_Roughness.1001.png
+  artifactKey: Guid(7e3d743497f3b1a42a771ea5f058fb7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skin_Roughness.1001.png using Guid(7e3d743497f3b1a42a771ea5f058fb7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da5ba9a1962fdf4383fd853bbae0919') in 0.011150 seconds 
+  Import took 0.016158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skull_Height.1001.png
+  artifactKey: Guid(17fc245f5bfc8af41ba6d88f48f1f138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skull_Height.1001.png using Guid(17fc245f5bfc8af41ba6d88f48f1f138) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c23f8fd5055822e03c213f30b2bdacc0') in 0.012971 seconds 
+  Import took 0.017710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Belt_Normal.1001.png
+  artifactKey: Guid(0e587bc9512eeed4d8ac362ae3473056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Belt_Normal.1001.png using Guid(0e587bc9512eeed4d8ac362ae3473056) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f48baa40fe56d9e8c9aa78b497d35c7f') in 0.009609 seconds 
+  Import took 0.014404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skin_Normal.1001.png
+  artifactKey: Guid(478b181062f5d4d48aff4a1fcec95b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skin_Normal.1001.png using Guid(478b181062f5d4d48aff4a1fcec95b56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2c46af1ce87360bd38592035bfe4617') in 0.008955 seconds 
+  Import took 0.013602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skirt_BaseColor.1001.png
+  artifactKey: Guid(5c3fd6738a2f32a4d8ba1574b0e66850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skirt_BaseColor.1001.png using Guid(5c3fd6738a2f32a4d8ba1574b0e66850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ddfb9451810a132fda47ca4799b4994') in 0.010771 seconds 
+  Import took 0.015230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Belt_Metallic.1001.png
+  artifactKey: Guid(7ca6fbe9c09831c48ba4bf2f8cafeb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Belt_Metallic.1001.png using Guid(7ca6fbe9c09831c48ba4bf2f8cafeb63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef1cbe71ef0e3bbba7eb799417a878a9') in 0.008227 seconds 
+  Import took 0.015268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skull_BaseColor.1001.png
+  artifactKey: Guid(3625bf782c2910f40b4a71dcb63e59e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skull_BaseColor.1001.png using Guid(3625bf782c2910f40b4a71dcb63e59e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '580cc0055e0b33cb78cad305c3315a4d') in 0.013146 seconds 
+  Import took 0.018338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Normal.1001.png
+  artifactKey: Guid(7843e66c183786d4ba6889ebafe6ef22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Normal.1001.png using Guid(7843e66c183786d4ba6889ebafe6ef22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177fbc8bbbdbeafafa38245999f5dfca') in 0.009731 seconds 
+  Import took 0.014203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Roughness.1001.png
+  artifactKey: Guid(0fdd0aba26a1f0c43a19222cbed2f2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4_Skirt_Roughness.1001.png using Guid(0fdd0aba26a1f0c43a19222cbed2f2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a30d73e547338259884a7fdce0d9979') in 0.008543 seconds 
+  Import took 0.013399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.838961 seconds.
+  path: Assets/Characters/Ver4/Enemy_Ver_4.blend
+  artifactKey: Guid(12d013ddc0f145a49a6793da4f861055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Characters/Ver4/Enemy_Ver_4.blend using Guid(12d013ddc0f145a49a6793da4f861055) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9080ad658bdfec37278de8a1a83b77b') in 0.116891 seconds 
+  Import took 0.121906 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003403 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.750 seconds
+Domain Reload Profiling:
+	ReloadAssembly (751ms)
+		BeginReloadAssembly (105ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (594ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (193ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (202ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (117ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2598 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.3 MB.
+System memory in use after: 142.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3683.
+Total: 2.797800 ms (FindLiveObjects: 0.310500 ms CreateObjectMapping: 0.075900 ms MarkObjects: 2.334100 ms  DeleteObjects: 0.076400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002767 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.695 seconds
+Domain Reload Profiling:
+	ReloadAssembly (696ms)
+		BeginReloadAssembly (102ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (541ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (183ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (179ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (105ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2598 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 142.3 MB.
+System memory in use after: 142.5 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 3686.
+Total: 2.764700 ms (FindLiveObjects: 0.292500 ms CreateObjectMapping: 0.089300 ms MarkObjects: 2.307100 ms  DeleteObjects: 0.074600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
