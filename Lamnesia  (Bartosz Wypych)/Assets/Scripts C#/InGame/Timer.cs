@@ -38,7 +38,7 @@ namespace Lamnesia.Player
                 else
                 {
                     Debug.Log("Time has run out!");
-                    timeRemaining = 0;
+                    timeRemaining = 10;
                     timerIsRunning = false;
                     healthScript.PlayDeath();
                 }

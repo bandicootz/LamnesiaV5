@@ -23,10 +23,10 @@ public class MouseLook : MonoBehaviour
 
     void Update()
     {
-        if (time < 45)
+        if (time < 30)
         time += Time.deltaTime;
 
-        if (time >= 45)
+        if (time >= 0)
         {
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
             float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;

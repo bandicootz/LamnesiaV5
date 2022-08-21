@@ -69,10 +69,10 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        if (time < 45f)
+        if (time < 30)
             time += Time.deltaTime;
 
-        if (time >= 45)
+        if (time >= 0)
         {
             switch (shootingMode)
             {
