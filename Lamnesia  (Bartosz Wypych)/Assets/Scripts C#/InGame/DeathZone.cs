@@ -14,15 +14,11 @@ namespace Lamnesia.Player
             healthScript = GetComponentInParent<HealthScript>();
         }
 
-        void LateUpdate()
+        private void OnCollisionEnter(Collision collision)
         {
+            if (CompareTag("Player"))
+                GetComponent<HealthScript>().PlayDeath();
             Debug.Log("You went where the devil says good night");
-            healthScript.PlayDeath();
-        }
-
-        private void OnTriggerEnter(Collider other)
-        {
-            Destroy(other.gameObject);
         }
     }
 }
