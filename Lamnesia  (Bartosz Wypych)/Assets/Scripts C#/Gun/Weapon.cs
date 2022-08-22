@@ -18,6 +18,8 @@ public class Weapon : MonoBehaviour
     public enum ShootMode { Auto, Semi }
     public ShootMode shootingMode;
 
+    public bool canUse = true;
+
     [Header("UI")]
     public Text ammoText;
 
@@ -84,25 +86,27 @@ public class Weapon : MonoBehaviour
                     shootInput = Input.GetButtonDown("Fire1");
                     break;
             }
-
-            if (shootInput)
+            if (canUse)
             {
-                if (currentBullets > 0)
-                    Fire();
-                else if (bulletsLeft > 0)
-                    DoReload();
+                if (shootInput)
+                {
+                    if (currentBullets > 0)
+                        Fire();
+                    else if (bulletsLeft > 0)
+                        DoReload();
+                }
+
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    if (currentBullets < bulletsPerMag && bulletsLeft > 0)
+                        DoReload();
+                }
+
+                if (fireTimer < fireRate)
+                    fireTimer += Time.deltaTime;
+
+                AimDownSights();
             }
-
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                if (currentBullets < bulletsPerMag && bulletsLeft > 0)
-                    DoReload();
-            }
-
-            if (fireTimer < fireRate)
-                fireTimer += Time.deltaTime;
-
-            AimDownSights();
         }
     }
 
@@ -168,7 +172,10 @@ public class Weapon : MonoBehaviour
         //anim.SetBool("Fire", true);
         currentBullets--;
 
-        UpdateAmmoText();
+        if (canUse)
+        {
+            UpdateAmmoText();
+        }
 
         fireTimer = 0.0f;
     }
