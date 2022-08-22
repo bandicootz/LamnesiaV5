@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 namespace Lamnesia.Player
@@ -9,10 +6,12 @@ namespace Lamnesia.Player
     {
         private void OnCollisionEnter(Collision collision)
         {
-            if (CompareTag("Player"))
+            if (collision.gameObject.CompareTag("Player"))
             {
                 Debug.Log("You went where the devil says good night");
-                collision.gameObject.GetComponent<HealthScript>().PlayDeath();
+                if (collision.gameObject.TryGetComponent(out HealthScript healthScript))
+                    healthScript.PlayDeath();
+                else print("There is no HealthScript!");
             }
         }
     }
