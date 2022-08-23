@@ -26,9 +26,14 @@ public class PlayerMovement : MonoBehaviour
     public AudioClip footStepsSound;
     public AudioClip jumpSound;
 
+
+    private AudioSource audioSource;
+
     void Start()
     {
         currPos = gameObject.transform.position;
+        audioSource = GetComponent<AudioSource>();
+        audioSource.clip = footStepsSound;
     }
     
     void Update()
@@ -62,11 +67,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (currPos != lastPos)
         {
-            if (!AudioManager.Instance.soundSource.isPlaying)
-            {
-                if (footStepsSound != null && isGrounded)
-                    AudioManager.Instance.PlaySound(footStepsSound); // if we have multiple sounds in same time may sound bug occure, extra sound manager needed
-            }
+            if (!audioSource.isPlaying)
+            audioSource.Play();
+
         }
     }
 }

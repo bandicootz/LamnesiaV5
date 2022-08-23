@@ -63,13 +63,14 @@ namespace Lamnesia.InGame
                             keyUI.SetActive(true);
                             if (keysQuantiny > 1)
                                 keyUI.GetComponentInChildren<TextMeshProUGUI>().text = "x" + keysQuantiny;
-                            
-                            AudioManager.Instance.PlaySound(key.interactSound);
+
+
                             key.myParticle.gameObject.SetActive(false);
                             key.gameObject.SetActive(false);
 
+                            AudioManager.Instance.PlaySound(key.interactSound);
                             tipUI.text = " ";
-                        } // "deleting" keys after interaction
+                        }
 
                         break;
 
@@ -118,6 +119,12 @@ namespace Lamnesia.InGame
                         }
 
                         break;
+
+                    default:
+
+                        tipUI.text = "";
+                        break;
+
                 }
             }
         }
