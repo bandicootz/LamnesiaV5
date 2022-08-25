@@ -9,12 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuScene.unity
     guid: 3e266fc8598cb4e71bd58ace168f8fe4
   - enabled: 1
-    path: Assets/Scenes/StartScene.unity
-    guid: 4c1ee78cc42453749b8d0bb417709fbf
-  - enabled: 1
     path: Assets/Scenes/Lamnesia.unity
     guid: 00c9509b10ff30047b54982b38180d28
-  - enabled: 1
-    path: Assets/Scenes/Credits.unity
-    guid: d0e97ef1d0b0ffd4c962aca59cfdaf04
   m_configObjects: {}
