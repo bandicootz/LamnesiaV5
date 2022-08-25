@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    [SerializeField]
+    float damageEnemy = 10f;
+
     private Animator anim;
     private AudioSource _AudioSource;
 
@@ -157,9 +160,15 @@ public class Weapon : MonoBehaviour
             Destroy(hitParticleEffect, 2f);
             Destroy(bulletHole, 3f);
 
-            if (hit.transform.GetComponent<HealthController>())
+            //if (hit.transform.GetComponent<HealthController>())
+            //{
+            //hit.transform.GetComponent<HealthController>().ApplyDamage(damage);
+            //}
+
+            if (hit.transform.tag == "Enemy")
             {
-                hit.transform.GetComponent<HealthController>().ApplyDamage(damage);
+                EnemyHealth enemyHealthScript = hit.transform.GetComponent<EnemyHealth>();
+                enemyHealthScript.DeductHealth(damageEnemy);
             }
 
             SpawnBulletTrail(hit.point);

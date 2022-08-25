@@ -12,11 +12,6 @@ public class FollowAI : MonoBehaviour
 
     public Transform[] wayPoints;
 
-    [Header("AI Properties")]
-    public float maxFollowDistance = 20f;
-    public float shootDistance = 10f;
-    public Weapon attackWeapon;
-
     private bool inSight;
     private Vector3 directionToTarget;
 
@@ -36,7 +31,6 @@ public class FollowAI : MonoBehaviour
     private void Update()
     {
         UpdateStates();
-        CheckForPlayer();
     }
 
     private void UpdateStates()
@@ -55,18 +49,6 @@ public class FollowAI : MonoBehaviour
         }
     }
 
-    private void CheckForPlayer()
-    {
-        directionToTarget = target.position - transform.position;
-
-        RaycastHit hitInfo;
-
-        if(Physics.Raycast(transform.position, directionToTarget.normalized, out hitInfo))
-        {
-            inSight = hitInfo.transform.CompareTag("Player");
-        }
-    }
-
     private void Patrol()
     {
         if (agent.destination != wayPoints[currentWayPoint].position)
@@ -78,53 +60,19 @@ public class FollowAI : MonoBehaviour
         {
             currentWayPoint = (currentWayPoint + 1) % wayPoints.Length;
         }
-
-        if (inSight)
-        {
-            currentState = States.Follow;
-        }
     }
 
     private void Follow()
     {
-        if(directionToTarget.magnitude <= shootDistance && inSight)
+        if (target != null)
         {
-            agent.ResetPath();
-            currentState = States.Attack;
-        }
-
-        else
-        {
-            if (target != null)
-            {
-                agent.SetDestination(target.position);
-            }
-
-            if (directionToTarget.magnitude > maxFollowDistance)
-            {
-                currentState = States.Patrol;
-            }
+            agent.SetDestination(target.position);
         }
     }
 
     private void Attack()
     {
-        if (!inSight || directionToTarget.magnitude > shootDistance)
-        {
-            currentState = States.Follow;
-        }
-
-        LookAtTarget();
-    }
-
-    private void LookAtTarget()
-    {
-        Vector3 lookDirection = directionToTarget;
-        lookDirection.y = 0f;
-
-        Quaternion lookRotation = Quaternion.LookRotation(lookDirection);
-
-        transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * agent.angularSpeed);
+        
     }
 
     private bool HasReached()
