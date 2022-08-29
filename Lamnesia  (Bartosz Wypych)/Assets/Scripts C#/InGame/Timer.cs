@@ -55,5 +55,13 @@ namespace Lamnesia.Player
                 timeText.text = string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds);
             else timeText.text = string.Format("00:00:000");
         }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("EndPoint"))
+            {
+                timerIsRunning = false;
+            }
+        }
     }
 }

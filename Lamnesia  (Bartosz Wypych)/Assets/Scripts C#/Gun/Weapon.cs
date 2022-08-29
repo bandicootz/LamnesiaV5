@@ -56,6 +56,8 @@ public class Weapon : MonoBehaviour
 
     private float time = 0f;
 
+    public bool isDead;
+
     void OnEnable()
     {
         UpdateAmmoText();
@@ -77,7 +79,7 @@ public class Weapon : MonoBehaviour
         if (time < 30)
             time += Time.deltaTime;
 
-        if (time >= 0)
+        if (time >= 0 && !isDead)
         {
             switch (shootingMode)
             {

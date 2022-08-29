@@ -20,6 +20,9 @@ namespace Lamnesia.Player
         private PlayerMovement playerMovemementScript;
 
         [SerializeField] private GameObject loseScreen;
+        [SerializeField] private GameObject cameraLook;
+        [SerializeField] private GameObject weaponObject;
+        [SerializeField] private GameObject weaponObject2;
 
         [Header("Health")]
         public float maxHealth = 100f;
@@ -62,7 +65,13 @@ namespace Lamnesia.Player
         {
             if (loseScreen != null) loseScreen.SetActive(true);
             isDead = true;
+
             playerMovemementScript.isDead = true;
+            cameraLook.GetComponent<MouseLook>().isDead = true;
+            weaponObject.GetComponent<Weapon>().isDead = true;
+            weaponObject2.GetComponent<Weapon>().isDead = true;
+            GetComponent<WeaponManager>().isDead = true;
+
             Cursor.lockState = CursorLockMode.None;
             AudioManager.Instance.PlaySound(deathSound);
             AudioManager.Instance.PlayMusic(deathMusic);

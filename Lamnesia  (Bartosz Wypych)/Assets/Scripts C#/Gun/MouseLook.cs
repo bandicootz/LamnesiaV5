@@ -5,13 +5,11 @@ using UnityEngine;
 public class MouseLook : MonoBehaviour
 {
     public float mouseSensitivity = 100f;
-
     public Transform playerBody;
-
     float xRotation = 0f;
-
     float time = 0;
 
+    public bool isDead;
     //[Header("Weapon")]
     //public WeaponController currentWeapon;
 
@@ -26,7 +24,7 @@ public class MouseLook : MonoBehaviour
         if (time < 30)
         time += Time.deltaTime;
 
-        if (time >= 0)
+        if (time >= 0 && !isDead)
         {
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
             float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;

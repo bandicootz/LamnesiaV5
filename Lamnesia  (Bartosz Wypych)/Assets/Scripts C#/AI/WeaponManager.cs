@@ -10,6 +10,7 @@ public class WeaponManager : MonoBehaviour
     private int index;
     private bool isSwitching;
 
+    public bool isDead;
     void Start()
     {
         InitializeWeapons();
@@ -28,26 +29,29 @@ public class WeaponManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") > 0 && !isSwitching)
+        if (!isDead)
         {
-            index++;
-
-            if (index >= weapons.Length)
+            if (Input.GetAxis("Mouse ScrollWheel") > 0 && !isSwitching)
             {
-                index = 0;
+                index++;
+
+                if (index >= weapons.Length)
+                {
+                    index = 0;
+                }
+                StartCoroutine(SwitchAfterDelay(index));
             }
-            StartCoroutine(SwitchAfterDelay(index));
-        }
 
-        else if (Input.GetAxis("Mouse ScrollWheel") < 0 && !isSwitching)
-        {
-            index--;
-
-            if (index < 0)
+            else if (Input.GetAxis("Mouse ScrollWheel") < 0 && !isSwitching)
             {
-                index = weapons.Length - 1;
+                index--;
+
+                if (index < 0)
+                {
+                    index = weapons.Length - 1;
+                }
+                StartCoroutine(SwitchAfterDelay(index));
             }
-            StartCoroutine(SwitchAfterDelay(index));
         }
     }
 

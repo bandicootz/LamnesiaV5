@@ -25,7 +25,7 @@ namespace Lamnesia.InGame
         [Header("REFERENCES TO OBJECTS")]
         [SerializeField] private TextMeshProUGUI tipUI;
         [SerializeField] private GameObject keyUI;
-
+        [SerializeField] private GameObject loseScreen;
         private float range = 5f;
 
         void Update()
@@ -36,7 +36,8 @@ namespace Lamnesia.InGame
         void Start()
         {
             cam = GetComponentInChildren<Camera>();
-            
+            loseScreen.SetActive(false);
+
             //Start music
             AudioManager.Instance.PlayMusic(startMusic);
             AudioManager.Instance.musicSource.loop = true;
