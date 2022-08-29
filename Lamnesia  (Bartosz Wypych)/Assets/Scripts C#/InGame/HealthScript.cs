@@ -80,18 +80,16 @@ namespace Lamnesia.Player
 
         private void Update()
         {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (loseScreen.activeSelf) loseScreen.SetActive(false);
+                SceneManager.LoadScene(0);
+            }
             if (isDead)
             {
-                if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    startPoint.SetActive(false);
-                    loseScreen.SetActive(false);
-                    SceneManager.LoadScene(0);
-                }
-
                 if (Input.GetKeyDown(KeyCode.R))
                 {
-
+                    startPoint.SetActive(false);
                     loseScreen.SetActive(false);
                     SceneManager.LoadScene(1);
                 }
