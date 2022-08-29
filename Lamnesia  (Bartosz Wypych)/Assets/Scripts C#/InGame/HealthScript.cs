@@ -23,6 +23,7 @@ namespace Lamnesia.Player
         [SerializeField] private GameObject cameraLook;
         [SerializeField] private GameObject weaponObject;
         [SerializeField] private GameObject weaponObject2;
+        [SerializeField] private GameObject startPoint;
 
         [Header("Health")]
         public float maxHealth = 100f;
@@ -81,8 +82,19 @@ namespace Lamnesia.Player
         {
             if (isDead)
             {
-                if (Input.GetKeyDown(KeyCode.Escape)) SceneManager.LoadScene(0);
-                if (Input.GetKeyDown(KeyCode.R)) SceneManager.LoadScene(1);
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    startPoint.SetActive(false);
+                    loseScreen.SetActive(false);
+                    SceneManager.LoadScene(0);
+                }
+
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+
+                    loseScreen.SetActive(false);
+                    SceneManager.LoadScene(1);
+                }
             }
         }
 
