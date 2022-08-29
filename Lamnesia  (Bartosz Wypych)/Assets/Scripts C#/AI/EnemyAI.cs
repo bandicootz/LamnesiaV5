@@ -9,6 +9,10 @@ public class EnemyAI : MonoBehaviour
     NavMeshAgent agent;
     Animator anim;
     bool isDead = false;
+    [SerializeField]
+    float chaseDistance = 2f;
+    [SerializeField]
+    float turnSpeed = 5f;
 
     void Start()
     {
@@ -21,19 +25,14 @@ public class EnemyAI : MonoBehaviour
     {
         float distance = Vector3.Distance(transform.position, target.position);
 
-        if(distance > 2 && !isDead)
+        if(distance > chaseDistance && !isDead)
         {
-            agent.updatePosition = true;
-            agent.SetDestination(target.position);
-            anim.SetBool("isWalking", true);
-            anim.SetBool("isAttacking", false);
+            ChasePlayer();
         }
 
         else
         {
-            agent.updatePosition = false;
-            anim.SetBool("isWalking", false);
-            anim.SetBool("isAttacking", true);
+            AttackPlayer();
         }
     }
 
@@ -41,5 +40,25 @@ public class EnemyAI : MonoBehaviour
     {
         isDead = true;
         anim.SetTrigger("isDead");
+    }
+
+    void ChasePlayer()
+    {
+        agent.updateRotation = true;
+        agent.updatePosition = true;
+        agent.SetDestination(target.position);
+        anim.SetBool("isWalking", true);
+        anim.SetBool("isAttacking", false);
+    }
+
+    void AttackPlayer()
+    {
+        agent.updateRotation = false;
+        Vector3 direction = target.position - transform.position;
+        direction.y = 0;
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), turnSpeed * Time.deltaTime);
+        agent.updatePosition = false;
+        anim.SetBool("isWalking", false);
+        anim.SetBool("isAttacking", true);
     }
 }
