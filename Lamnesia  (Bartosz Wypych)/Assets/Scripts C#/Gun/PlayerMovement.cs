@@ -21,7 +21,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 lastPos;
     private Vector3 currPos;
     private bool isJumping;
-    
+    public bool isDead;
+
     [Header("Sounds here")] 
     public AudioClip footStepsSound;
     public AudioClip jumpSound;
@@ -49,10 +50,11 @@ public class PlayerMovement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * x + transform.forward * z;
-
-        controller.Move(move * speed * Time.deltaTime);
-
+        if (!isDead)
+        {
+            Vector3 move = transform.right * x + transform.forward * z;
+            controller.Move(move * speed * Time.deltaTime);
+        }
         if(Input.GetButtonDown("Jump") && isGrounded)
         {
             if (jumpSound != null) AudioManager.Instance.PlaySound(jumpSound);

@@ -17,6 +17,7 @@ namespace Lamnesia.Player
         private const float LowerBound = 0;
         private const float HigherBound = 100f;
         private bool isDead = false;
+        private PlayerMovement playerMovemementScript;
 
         [SerializeField] private GameObject loseScreen;
 
@@ -32,6 +33,7 @@ namespace Lamnesia.Player
         {
             //to be improved
             health = maxHealth;
+            playerMovemementScript = GetComponentInParent<PlayerMovement>();
         }
 
         public void ChangeHealth(float value)
@@ -60,6 +62,7 @@ namespace Lamnesia.Player
         {
             if (loseScreen != null) loseScreen.SetActive(true);
             isDead = true;
+            playerMovemementScript.isDead = true;
             Cursor.lockState = CursorLockMode.None;
             AudioManager.Instance.PlaySound(deathSound);
             AudioManager.Instance.PlayMusic(deathMusic);
