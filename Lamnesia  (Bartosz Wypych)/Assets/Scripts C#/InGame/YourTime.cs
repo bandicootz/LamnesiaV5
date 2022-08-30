@@ -25,6 +25,8 @@ namespace Lamnesia.Player
             if (minutes >= 0 && seconds >= 0 && milliseconds >= 0)
                 text.text += string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds);
             else text.text += string.Format("00:00:000");
+
+            Cursor.lockState = CursorLockMode.None;
         }
     }
 }
