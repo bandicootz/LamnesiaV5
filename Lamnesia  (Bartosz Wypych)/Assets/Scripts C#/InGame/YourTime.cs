@@ -16,7 +16,7 @@ namespace Lamnesia.Player
             text = GetComponent<TextMeshProUGUI>();
         }
 
-        public void GetTime()
+        public void Update()
         {
             time = 600 - timer.timeRemaining;
             float minutes = Mathf.FloorToInt(time / 60);
