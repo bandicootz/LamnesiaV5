@@ -11,8 +11,6 @@ public class EnemyAI : MonoBehaviour
     bool isDead = false;
     [SerializeField]
     float chaseDistance = 2f;
-    [SerializeField]
-    float turnSpeed = 5f;
 
     void Start()
     {
@@ -44,7 +42,6 @@ public class EnemyAI : MonoBehaviour
 
     void ChasePlayer()
     {
-        agent.updateRotation = true;
         agent.updatePosition = true;
         agent.SetDestination(target.position);
         anim.SetBool("isWalking", true);
@@ -53,10 +50,8 @@ public class EnemyAI : MonoBehaviour
 
     void AttackPlayer()
     {
-        agent.updateRotation = false;
         Vector3 direction = target.position - transform.position;
         direction.y = 0;
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(direction), turnSpeed * Time.deltaTime);
         agent.updatePosition = false;
         anim.SetBool("isWalking", false);
         anim.SetBool("isAttacking", true);
