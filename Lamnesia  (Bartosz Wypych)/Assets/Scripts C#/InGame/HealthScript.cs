@@ -83,13 +83,13 @@ namespace Lamnesia.Player
             if (Input.GetKeyDown(KeyCode.Escape))
             {
                 if (loseScreen.activeSelf) loseScreen.SetActive(false);
+                Cursor.lockState = CursorLockMode.None;
                 SceneManager.LoadScene(0);
             }
             if (isDead)
             {
                 if (Input.GetKeyDown(KeyCode.R))
                 {
-                    startPoint.SetActive(false);
                     loseScreen.SetActive(false);
                     SceneManager.LoadScene(1);
                 }

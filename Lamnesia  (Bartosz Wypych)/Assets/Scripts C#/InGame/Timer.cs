@@ -12,8 +12,6 @@ namespace Lamnesia.Player
         TextMeshProUGUI timeText;
         HealthScript healthScript;
 
-        public float timeFinish = 100;
-
         private float time = 0;
         private void Start()
         {

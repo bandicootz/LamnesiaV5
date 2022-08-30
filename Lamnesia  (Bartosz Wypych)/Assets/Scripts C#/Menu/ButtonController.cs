@@ -30,7 +30,7 @@ namespace Lamnesia.InGame.Menu
                     settingsPanel.SetActive(true);
                     break;
                 case "StartButton":
-                    SceneManager.LoadSceneAsync(1);
+                    SceneManager.LoadSceneAsync(2);
                     loadingScreen.SetActive(true);
                     break;
                 case "CreditsButton":
