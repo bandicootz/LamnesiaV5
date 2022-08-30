@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 namespace Lamnesia.Player
 {
@@ -14,10 +15,6 @@ namespace Lamnesia.Player
         void Start()
         {
             text = GetComponent<TextMeshProUGUI>();
-        }
-
-        public void Update()
-        {
             time = 600 - timer.timeRemaining;
             float minutes = Mathf.FloorToInt(time / 60);
             float seconds = Mathf.FloorToInt(time % 60);
@@ -27,6 +24,16 @@ namespace Lamnesia.Player
             else text.text += string.Format("00:00:000");
 
             Cursor.lockState = CursorLockMode.None;
+        }
+
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                //if (loseScreen.activeSelf) loseScreen.SetActive(false);
+                Cursor.lockState = CursorLockMode.None;
+                SceneManager.LoadScene(0);
+            }
         }
     }
 }
