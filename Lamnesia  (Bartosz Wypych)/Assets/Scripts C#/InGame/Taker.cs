@@ -103,7 +103,7 @@ namespace Lamnesia.InGame
                                                 keyUI.SetActive(false);
                                             
                                             AudioManager.Instance.PlaySound(door.GetComponent<Door>().interactSound);
-                                            door.SetActive(false);
+                                            //door.SetActive(false);
                                             
                                             tipUI.text = " ";
                                             //m_Keys.Remove(m_Key);
